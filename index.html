@@ -6,6 +6,68 @@
     <title>CodeClip</title>
   </head>
   <body>
-    
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 2rem;
+      background: #f9f9f9;
+    }
+    form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+    input, textarea, select, button {
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      border: none;
+    }
+    #preview {
+      white-space: pre-wrap;
+      background: #eee;
+      padding: 1rem;
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <form id="challengeForm">
+    <h2>Submit a Coding Challenge</h2>
+
+    <input type="text" id="title" placeholder="Title" required />
+
+    <textarea id="description" placeholder="Description (Markdown supported)" required></textarea>
+
+    <select id="difficulty" required>
+      <option value="">Select Difficulty</option>
+      <option value="Easy">Easy</option>
+      <option value="Medium">Medium</option>
+      <option value="Hard">Hard</option>
+    </select>
+
+    <textarea id="testCases" placeholder="Test Cases (JSON Format)" required></textarea>
+
+    <textarea id="solution" placeholder="Sample Solution (Code)" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <h3>Live Preview (Description)</h3>
+  <div id="preview"></div>
+
+  <script src="script.js"></script>
   </body>
 </html>
