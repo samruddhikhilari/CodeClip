@@ -31,7 +31,7 @@ form.addEventListener('submit', function (e) {
   try {
     JSON.parse(data.testCases);
   } catch (err) {
-    alert("Test cases must be valid JSON format.");
+    alert(`Test cases must be valid JSON format. Error: ${err.message}\nExample of valid JSON: [{"input": "value1", "output": "value2"}]`);
     return;
   }
 
