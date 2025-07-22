@@ -12,7 +12,7 @@ descriptionField.addEventListener('input', () => {
     .replace(/^# (.*$)/gim, '<h1>$1</h1>')
     .replace(/\*\*(.*?)\*\*/gim, '<b>$1</b>')
     .replace(/\*(.*?)\*/gim, '<i>$1</i>')
-    .replace(/\n$/gim, '<br />');
+    .replace(/\n/gim, '<br />');
 
   preview.innerHTML = formatted;
 });
