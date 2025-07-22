@@ -35,11 +35,13 @@
             <li><a href="#" class="nav__link">Profile</a></li>
           </ul>
         </nav>
+        <!-- Hamburger Code starts -->
         <button class="header__toggle" id="navToggle" aria-label="Open navigation menu">
           <span class="hamburger"></span>
           <span class="hamburger"></span>
           <span class="hamburger"></span>
         </button>
+        <!-- Hamburger Code ends -->
       </div>
     </header>
 
@@ -133,7 +135,26 @@
 
     <!-- Scripts -->
     <script type="module" src="scripts/data.js"></script>
-    <script type="module" src="scripts/app.js"></script>
     <script type="module" src="./scripts/theme.js"></script>
+    <script type="module" src="scripts/app.js"></script>
+    <!-- Hamburger JavaScript code starts -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.querySelector('.nav__list');
+
+        navToggle.addEventListener('click', () => {
+          navMenu.classList.toggle('open');
+        });
+      });
+    </script>
+    <script>
+      document.querySelectorAll('.nav__link').forEach(link => {
+        link.addEventListener('click', () => {
+          navMenu.classList.remove('open');
+        });
+      });
+    </script>
+    <!-- Hamburger javascripts code end -->
   </body>
 </html>
