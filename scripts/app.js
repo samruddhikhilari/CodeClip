@@ -34,5 +34,16 @@ if (navToggle && navMenu) {
       isOpen ? 'Close navigation menu' : 'Open navigation menu'
     );
     navToggle.setAttribute('aria-expanded', isOpen);
+    
+    // Animate hamburger toEye icon
+    if (isOpen) {
+      navToggle.children[0].style.transform = 'rotate(45deg) translate(6px, 6px)';
+      navToggle.children[2].style.transform = 'rotate(-45deg) translate(6px, -6px)';
+      navToggle.children[1].style.opacity = '0';
+    } else {
+      navToggle.children[0].style.transform = 'rotate(0deg)';
+      navToggle.children[2].style.transform = 'rotate(0deg)';
+      navToggle.children[1].style.opacity = '1';
+    }
   });
 }
