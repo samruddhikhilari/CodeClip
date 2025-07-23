@@ -22,7 +22,9 @@
 });
 
     // 2. Challenges Completed (Bar Chart)
-    const challengesCtx = document.getElementById('challengesChart').getContext('2d');
+    const challengesCanvas = document.getElementById('challengesChart');
+    if (!challengesCanvas) return;
+    const challengesCtx = challengesCanvas.getContext('2d');
     new Chart(challengesCtx, {
     type: 'bar',
     data: {
