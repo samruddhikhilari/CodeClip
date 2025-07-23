@@ -212,7 +212,29 @@
         </div>
       </div>
 <!--progress bars-->
-      <div class="dashboard-row">
+        <div class="charts-container">
+          <div class="chart-box">
+            <div class="progress-header">
+              <div class="progress-icon-box">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3>Coding Time (Hours)</h3>
+            </div>
+            <canvas id="codingTimeChart"></canvas>
+          </div>
+
+          <div class="chart-box">
+            <div class="progress-header">
+              <div class="progress-icon-box">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <h3>Challenges Completed</h3>
+            </div>
+            <canvas id="challengesChart"></canvas>
+          </div>
+        </div>
+
+        <div class="dashboard-row">
         <!-- Leaderboard Section -->
         <div class="leaderboard-section">
           <div class="leaderboard-section-header">
@@ -282,7 +304,6 @@
           </ul>
         </div>
       </div>
-
     </section>
     <script src="/scripts/profile.js"></script>
   </main>
