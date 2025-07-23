@@ -675,7 +675,7 @@
   <style>
     /* Additional styles for profile page */
     .profile-hero{
-      background-color: #c0f4fc; /* Light gray */
+      background-color: #c0f4fc; 
       margin: 0;
     }
 
@@ -689,7 +689,7 @@
 
     .profile-hero__content {
       display: flex;
-      align-items: center; /* Vertically center avatar and stats */
+      align-items: center; 
       gap: 3rem;
       flex-wrap: nowrap;
       text-align: left;
@@ -726,7 +726,7 @@
       flex: 0 0 120px;
       margin: 0;
       display: flex;
-      align-items: center; /* Ensure avatar is centered vertically */
+      align-items: center;
       justify-content: center;
       margin: 50px 0 0 0;
     }
@@ -743,7 +743,7 @@
     .profile-stats {
       background: none;
       padding: 0;
-      margin-top: 0; /* Remove top margin for alignment */
+      margin-top: 0; 
     }
 
     @media (max-width: 1110px) {
@@ -763,7 +763,7 @@
       } */
 
       .stats-grid {
-        grid-template-columns: repeat(2, minmax(220px, 1fr)); /* Wider stat boxes, 2 per row */
+        grid-template-columns: repeat(2, minmax(220px, 1fr)); 
         gap: 2rem;
       }
       .stat-card {
@@ -774,14 +774,14 @@
 
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr); /* Ensure stats are in a row */
+      grid-template-columns: repeat(4, 1fr); 
       gap: 2rem;
       margin-top: 25px;
     }
 
     .heatmap {
       display: grid;
-      grid-template-columns: repeat(7, 1fr); /* 7 columns for days of week */
+      grid-template-columns: repeat(7, 1fr); 
       gap: 4px;
       margin-top: 1rem;
     }
@@ -809,9 +809,9 @@
 
     .heatmap {
       display: grid;
-      grid-template-columns: repeat(53, 1fr); /* 53 weeks in a year */
-      grid-auto-rows: 14px;                   /* 7 rows will auto-fill for days */
-      gap: 2px;                               /* Minimal gap for compact look */
+      grid-template-columns: repeat(53, 1fr); 
+      grid-auto-rows: 14px;                   
+      gap: 2px;                              
       justify-content: start;
       align-items: start;
       margin: 0 auto;
@@ -879,7 +879,7 @@
       width: 14px;
       height: 14px;
       border-radius: 2px;
-      background: #b3b3b3; /* LeetCode's default gray */
+      background: #b3b3b3; 
       display: block;
       transition: background 0.2s;
     }
@@ -887,12 +887,6 @@
     .heatmap-day.active {
       background: #014be9;
     }
-
-    /* .profile-hero {
-      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-      padding: 4rem 0;
-      text-align: center;
-    } */
 
     .profile-avatar {
       margin-bottom: 2rem;
