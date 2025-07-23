@@ -43,19 +43,454 @@
     <section class="profile-hero">
       <div class="container">
         <div class="profile-hero__content">
-          <div class="profile-avatar">
-            <div class="avatar-circle">
-              <span class="avatar-initial">U</span>
+          <div class="profile-info">
+            <div class="profile-avatar">
+              <label for="upload-avatar" class="avatar-circle" id="avatarCircle">
+                <img id="avatarPreview" src="" alt="Profile Avatar" hidden />
+                <span id="avatarInitial" class="avatar-initial">U</span>
+                <input type="file" id="upload-avatar" accept="image/*" hidden />
+              </label>
             </div>
+            <h1 class="profile-hero__title">User Profile</h1>
+            <p class="profile-hero__subtitle" id="profileSubtitle">
+              <span id="subtitleText">Track your coding journey</span>
+            </p>
+            <section class="profile-stats">
+              <!-- <div class="container"> -->
+                <div class="stat-card heatmap-card">
+                    <div class="heatmap-month">
+                       <div class="stat-label">January</div>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day active"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day active"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day active"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day active"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                    </div>
+                    <div class="heatmap-month">
+                       <div class="stat-label">February</div>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                    </div>
+                    <div class="heatmap-month">
+                       <div class="stat-label">March</div>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                    </div>
+                    <div class="heatmap-month">
+                        <div class="stat-label">April</div>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                    </div>
+                    <div class="heatmap-month">
+                        <div class="stat-label">May</div>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                    </div>
+                    <div class="heatmap-month">
+                        <div class="stat-label">June</div>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                    </div>
+                    <div class="heatmap-month">
+                        <div class="stat-label">July</div>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                    </div>
+                    <div class="heatmap-month">
+                       <div class="stat-label">August</div>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                    </div>
+                    <div class="heatmap-month">
+                      <div class="stat-label">September</div>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                    </div>
+                    <div class="heatmap-month">
+                        <div class="stat-label">October</div>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                    </div>
+                    <div class="heatmap-month">
+                        <div class="stat-label">November</div>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                    </div>
+                    <div class="heatmap-month">
+                        <div class="stat-label">December</div>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                        <span class="heatmap-day"></span>
+                    </div>
+                </div>
+                <div class="stats-grid">
+                  <div class="stat-card">
+                    <div class="stat-icon">🎯</div>
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Challenges Solved</div>
+                  </div>
+                
+                  <div class="stat-card">
+                    <div class="stat-icon">⭐</div>
+                    <div class="stat-number">1,250</div>
+                    <div class="stat-label">Points Earned</div>
+                  </div>
+                  <div class="stat-card">
+                    <div class="stat-icon">🏆</div>
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Achievements</div>
+                  </div>
+                </div>
+              <!-- </div> -->
+            </section>
           </div>
-          <h1 class="profile-hero__title">User Profile</h1>
-          <p class="profile-hero__subtitle">Track your coding journey</p>
         </div>
       </div>
     </section>
 
     <!-- Profile Stats -->
-    <section class="profile-stats">
+    <!-- <section class="profile-stats">
       <div class="container">
         <div class="stats-grid">
           <div class="stat-card">
@@ -80,7 +515,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <!-- Profile Content -->
     <section class="profile-content">
@@ -159,7 +594,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> 
 
           <!-- Achievements -->
           <div class="profile-section">
@@ -239,44 +674,244 @@
   
   <style>
     /* Additional styles for profile page */
-    .profile-hero {
-      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
-      padding: 4rem 0;
-      text-align: center;
+    .profile-hero{
+      background-color: #c0f4fc; /* Light gray */
+      margin: 0;
     }
 
-    .profile-avatar {
-      margin-bottom: 2rem;
+    .profile-content{
+      background-color: #c0f4fc;
+    }
+
+    .footer{
+      background-color: #c0f4fc;
+    }
+
+    .profile-hero__content {
+      display: flex;
+      align-items: center; /* Vertically center avatar and stats */
+      gap: 3rem;
+      flex-wrap: nowrap;
+      text-align: left;
     }
 
     .avatar-circle {
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      background: rgba(255, 255, 255, 0.2);
+      background: rgba(0, 41, 63, 0.37);
       display: flex;
       align-items: center;
       justify-content: center;
-      margin: 0 auto;
-      border: 4px solid rgba(255, 255, 255, 0.3);
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      border: 3px solid rgba(255, 255, 255, 0.3);
     }
 
     .avatar-initial {
       font-size: 3rem;
       font-weight: 700;
-      color: white;
+      color: rgb(0, 105, 137);
+    }
+
+    #avatarPreview {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .profile-avatar {
+      flex: 0 0 120px;
+      margin: 0;
+      display: flex;
+      align-items: center; /* Ensure avatar is centered vertically */
+      justify-content: center;
+      margin: 50px 0 0 0;
+    }
+
+    .profile-info {
+      flex: 1 1 350px;
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+    }
+
+    .profile-stats {
+      background: none;
+      padding: 0;
+      margin-top: 0; /* Remove top margin for alignment */
+    }
+
+    @media (max-width: 1110px) {
+      .profile-hero__content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2rem;
+      }
+      .profile-info {
+        min-width: unset;
+        display: block;
+        width: 100%;
+      }
+      /* .stats-grid {
+        justify-items: center;
+      } */
+
+      .stats-grid {
+        grid-template-columns: repeat(2, minmax(220px, 1fr)); /* Wider stat boxes, 2 per row */
+        gap: 2rem;
+      }
+      .stat-card {
+        min-width: 220px;
+        max-width: 100%;
+      }
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Ensure stats are in a row */
+      gap: 2rem;
+      margin-top: 25px;
+    }
+
+    .heatmap {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr); /* 7 columns for days of week */
+      gap: 4px;
+      margin-top: 1rem;
+    }
+
+    .heatmap-day {
+      width: 16px;
+      height: 16px;
+      border-radius: 3px;
+      background: #cfcfcf;
+      display: inline-block;
+      transition: background 0.2s;
+    }
+
+    .heatmap-day.active {
+      background: #2563eb;
+    }
+
+    .streak-heatmap-container {
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .heatmap {
+      display: grid;
+      grid-template-columns: repeat(53, 1fr); /* 53 weeks in a year */
+      grid-auto-rows: 14px;                   /* 7 rows will auto-fill for days */
+      gap: 2px;                               /* Minimal gap for compact look */
+      justify-content: start;
+      align-items: start;
+      margin: 0 auto;
+      max-width: 800px;
+      padding: 16px 0;
+      overflow-x: auto;
+    }
+
+    .heatmap-card {
+      display: flex;
+      flex-direction: row;     
+      gap: 18px;               
+      justify-content: flex-start;
+      align-items: flex-start;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.08);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      overflow-x: auto;        
+      width: 100%;
+      scrollbar-width: thin;    
+    }
+    
+    .heatmap-card::-webkit-scrollbar {
+      height: 10px;
+    }
+    /* Each month grid */
+    .heatmap-month {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr); 
+      gap: 4px;
+      background: rgb(132, 132, 132);
+      min-width: 170px;
+      padding: 12px 8px;        
+      border-radius: 10px;      
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      overflow: hidden;        
+    }       
+    
+    .heatmap-card::-webkit-scrollbar-thumb {
+      background: #aebcd1;
+      border-radius: 4px;
+    }
+
+    .heatmap-month .stat-label {
+      grid-column: span 7;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #000000;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+
+    .heatmap-title {
+      width: 100%;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: #014be9;
+      letter-spacing: 1px;
+    }
+
+    .heatmap-day {
+      width: 14px;
+      height: 14px;
+      border-radius: 2px;
+      background: #b3b3b3; /* LeetCode's default gray */
+      display: block;
+      transition: background 0.2s;
+    }
+
+    .heatmap-day.active {
+      background: #014be9;
+    }
+
+    /* .profile-hero {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+      padding: 4rem 0;
+      text-align: center;
+    } */
+
+    .profile-avatar {
+      margin-bottom: 2rem;
     }
 
     .profile-hero__title {
       font-size: 2.5rem;
       font-weight: 700;
       margin-bottom: 0.5rem;
-      color: white;
+      color: rgb(1, 71, 99);
+      text-align: center;   
+      width: 100%;
+      margin-left: 0.5rem;
     }
 
     .profile-hero__subtitle {
       font-size: 1.2rem;
-      color: rgba(255, 255, 255, 0.9);
+      text-align: center;
+      color: rgba(0, 0, 0, 0.9);
     }
 
     .profile-stats {
@@ -291,11 +926,12 @@
     }
 
     .stat-card {
-      background: white;
+      background: rgb(87, 87, 87);
       padding: 2rem;
+      color:white;
       border-radius: 1rem;
       text-align: center;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.451); 
     }
 
     .stat-icon {
@@ -315,9 +951,9 @@
       font-weight: 500;
     }
 
-    .profile-content {
+    /* .profile-content {
       padding: 4rem 0;
-    }
+    } */
 
     .profile-grid {
       display: grid;
@@ -325,7 +961,8 @@
     }
 
     .profile-section {
-      background: white;
+      color:white;
+      background: rgb(87, 87, 87);
       padding: 2rem;
       border-radius: 1rem;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -373,6 +1010,8 @@
     }
 
     .progress-bar {
+      position: relative;
+      width: 100%;
       height: 8px;
       background: #e9ecef;
       border-radius: 4px;
@@ -380,9 +1019,11 @@
     }
 
     .progress-fill {
+      display: block;
       height: 100%;
-      background: var(--primary-color);
-      transition: width 0.3s ease;
+      background: var(--primary-color, #49b6e9);
+      border-radius: 4px;
+      transition: width 5s ease;
     }
 
     .progress-text {
@@ -402,7 +1043,7 @@
       border-radius: 1rem;
       font-size: 0.875rem;
       font-weight: 500;
-      background: #e9ecef;
+      background: #2c78c2;
       color: var(--text-muted);
     }
 
@@ -419,6 +1060,7 @@
     .activity-list {
       display: flex;
       flex-direction: column;
+      color:black;
       gap: 1.5rem;
     }
 
@@ -427,7 +1069,7 @@
       align-items: flex-start;
       gap: 1rem;
       padding: 1rem;
-      background: var(--bg-light);
+      background: rgb(210, 210, 210);
       border-radius: 0.75rem;
     }
 
@@ -468,8 +1110,9 @@
 
     .achievement-card.earned {
       opacity: 1;
-      background: white;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      background: #0091d4; 
+      box-shadow: 0 0 15px 4px rgb(30 132 241 / 94%);
+      transition: box-shadow 0.3s ease;
     }
 
     .achievement-icon {
@@ -506,5 +1149,3 @@
       }
     }
   </style>
-</body>
-</html>

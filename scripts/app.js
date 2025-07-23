@@ -184,3 +184,44 @@ if (navToggle && navMenu) {
     }
   });
 }
+
+// --- Profile Page Logic ---
+document.addEventListener("DOMContentLoaded", () => {
+  const avatarInput = document.getElementById('upload-avatar');
+  const avatarPreview = document.getElementById('avatarPreview');
+  const avatarInitial = document.getElementById('avatarInitial');
+  const avatarCircle = document.getElementById('avatarCircle');
+
+  // Load from localStorage
+  const savedImage = localStorage.getItem('profileAvatar');
+  if (savedImage && avatarPreview) {
+    avatarPreview.src = savedImage;
+    avatarPreview.hidden = false;
+    avatarInitial.style.display = 'none';
+  }
+
+  // Trigger input when avatar is clicked
+  if (avatarCircle && avatarInput) {
+    avatarCircle.addEventListener('click', () => avatarInput.click());
+  }
+
+  // Handle image selection
+  if (avatarInput) {
+    avatarInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+
+      const reader = new FileReader();
+      reader.onload = function (event) {
+        const dataUrl = event.target.result;
+        if (avatarPreview) {
+          avatarPreview.src = dataUrl;
+          avatarPreview.removeAttribute('hidden');
+          avatarInitial.style.display = 'none';
+        }
+        localStorage.setItem('profileAvatar', dataUrl);
+      };
+      reader.readAsDataURL(file);
+    });
+  }
+});
