@@ -1,34 +1,8 @@
-/*.icon-box {*/
-/*    width: 40px;*/
-/*    height: 40px;*/
-/*    background-color: #007BFF; !* Blue background *!*/
-/*    color: white;              !* White icon *!*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    border-radius: 4px; !* Optional: for rounded corners *!*/
-/*    margin-right: 10px;*/
-/*}*/
-/*.profile-header{*/
-/*    font-size: 15px;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-/*    padding-left: 40px;*/
-
-/*}*/
-/*.profile-header-title{*/
-/*    font-size: 15px;*/
-
-/*}*/
-/*.profile-header-subtitle{*/
-/*    font-size: 15px;*/
-/*    color: dimgrey;*/
-/*}*/
 .profile-header {
     display: flex;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    padding-left: 40px;
+    padding-left: 20px;
     padding-top: 10px;
 }
 
@@ -359,6 +333,7 @@
     display: inline-flex;
     align-items: center;
     gap: 6px;
+    width:150px
 }
 .goals-section {
     background: #fff;
@@ -368,6 +343,7 @@
     max-width: 800px;
     margin: 40px auto;
     font-family: 'Poppins', sans-serif;
+
 }
 
 .goals-section-header {
@@ -436,4 +412,12 @@
     margin: 4px 0 0;
     font-size: 14px;
     color: #666;
+}
+.dashboard-row {
+    display: flex;
+    gap: 0px;
+    flex-wrap: wrap; /* Makes it responsive on smaller screens */
+    justify-content: center;
+    margin: 40px auto;
+    width: 100%;
 }

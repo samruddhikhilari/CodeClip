@@ -43,20 +43,7 @@
 
   <!-- Main Content -->
   <main>
-    <!-- Profile Hero Section -->
-<!--    <section class="profile-hero">-->
-<!--      <div class="container">-->
-<!--        <div class="profile-hero__content">-->
-<!--          <div class="profile-avatar">-->
-<!--            <div class="avatar-circle">-->
-<!--              <span class="avatar-initial">U</span>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <h1 class="profile-hero__title">User Profile</h1>-->
-<!--          <p class="profile-hero__subtitle">Track your coding journey</p>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </section>-->
+
 
 
     <!-- Profile Stats -->
@@ -80,7 +67,7 @@
           </div>
           <div class="card-content">
             <div class="card-title">Current Streak</div>
-            <div class="card-value">5 Days</div>
+            <div id="streak-value" class="card-value">5 Days</div>
           </div>
         </div>
 
@@ -91,7 +78,7 @@
           </div>
           <div class="card-content">
             <div class="card-title">Total Coding Time</div>
-            <div class="card-value">12 hrs</div>
+            <div id="coding-time" class="card-value">12 hrs</div>
           </div>
         </div>
 
@@ -102,7 +89,7 @@
           </div>
           <div class="card-content">
             <div class="card-title">Rank</div>
-            <div class="card-value">#24</div>
+            <div id="rank-value" class="card-value">#24</div>
           </div>
         </div>
 
@@ -113,7 +100,7 @@
           </div>
           <div class="card-content">
             <div class="card-title">Points Earned</div>
-            <div class="card-value">1280 pts</div>
+            <div id="points-value" class="card-value">1280 pts</div>
           </div>
         </div>
       </div>
@@ -123,7 +110,7 @@
           <div class="challenges-icon-box">
             <i class="fas fa-check-circle"></i>
           </div>
-          <div class="section-title"> Completed Challenges</div>
+          <div id="completed-challenges" class="section-title"> Completed Challenges</div>
         </div>
         <div class="challenges-grid">
           <div class="challenge-card">
@@ -132,7 +119,7 @@
             <div class="difficulty easy">Easy</div>
             <div class="challenge-status completed">Completed</div>
           </div>
-          <div class="challenge-card">
+          <div  class="challenge-card">
             <div class="challenge-title">Responsive Navbar</div>
             <div class="challenge-meta">Web Dev • July 18, 2025</div>
             <div class="difficulty medium">Medium</div>
@@ -144,7 +131,7 @@
             <div class="difficulty easy">Easy</div>
             <div class="challenge-status completed">Completed</div>
           </div>
-          <div class="challenge-card">
+          <div id="challenge" class="challenge-card">
             <div class="challenge-title">Responsive Navbar</div>
             <div class="challenge-meta">Web Dev • July 18, 2025</div>
             <div class="difficulty medium">Medium</div>
@@ -154,7 +141,7 @@
       </div>
 
       <!--  In Progress Challenges -->
-      <div class="challenges-section">
+      <div id="in-progress-challenges" class="challenges-section">
         <div class="challenges-section-header">
           <div class="challenges-icon-box">
             <i class="fas fa-spinner"></i>
@@ -189,10 +176,10 @@
             </div>
           </div>
         </div>
-      </div>
+
 
       <!--  To-Do Challenges -->
-      <div class="challenges-section">
+      <div id="to-do-challenges" class="challenges-section">
         <div class="challenges-section-header">
           <div class="challenges-icon-box">
             <i class="fas fa-list-ul"></i>
@@ -227,218 +214,77 @@
         </div>
       </div>
 <!--progress bars-->
-      <div class="charts-container">
-        <div class="chart-box">
-          <div class="progress-header">
-            <div class="progress-icon-box">
-              <i class="fas fa-clock"></i>
-            </div>
-            <h3>Coding Time (Hours)</h3>
+      <div class="dashboard-row">
+        <!-- Leaderboard Section -->
+        <div class="leaderboard-section">
+          <div class="leaderboard-section-header">
+            <div class="leaderboard-section-icon"><i class="fas fa-trophy"></i></div>
+            <h2>Leaderboard</h2>
           </div>
-          <canvas id="codingTimeChart"></canvas>
+          <table class="leaderboard-table">
+            <thead>
+            <tr>
+              <th><div class="rank-icon-box"><i class="fas fa-medal"></i></div></th>
+              <th>User</th>
+              <th>Points</th>
+              <th>Badges</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td><div class="rank-icon-box"><i class="fas fa-crown"></i></div></td>
+              <td id="username-master">Alice</td>
+              <td id="points-master">1540 XP</td>
+              <td><span class="badge"><i class="fas fa-star"></i> Master</span></td>
+            </tr>
+            <tr>
+              <td><div class="rank-icon-box"><i class="fas fa-certificate"></i></div></td>
+              <td id="username-streak">Bob</td>
+              <td id="points-streak">1320 XP</td>
+              <td><span class="badge"><i class="fas fa-fire"></i> Streaker</span></td>
+            </tr>
+            <tr>
+              <td><div class="rank-icon-box"><i class="fas fa-rocket"></i></div></td>
+              <td id="username-fast-starter">Charlie</td>
+              <td id="points-fast starter">1210 XP</td>
+              <td><span class="badge"><i class="fas fa-bolt"></i> Fast Starter</span></td>
+            </tr>
+            </tbody>
+          </table>
         </div>
 
-        <div class="chart-box">
-          <div class="progress-header">
-            <div class="progress-icon-box">
-              <i class="fas fa-tasks"></i>
-            </div>
-            <h3>Challenges Completed</h3>
+        <!-- Goals Section -->
+        <div class="goals-section">
+          <div class="goals-section-header">
+            <div class="goals-section-icon"><i class="fas fa-bullseye"></i></div>
+            <h2>Upcoming Goals & Reminders</h2>
           </div>
-          <canvas id="challengesChart"></canvas>
+          <ul id="gals-list" class="goal-list">
+            <li>
+              <div class="goal-icon-box"><i class="fas fa-check-circle"></i></div>
+              <div class="goal-text">
+                <strong>Finish 5 Easy Challenges</strong>
+                <p>Complete by Sunday to maintain your streak.</p>
+              </div>
+            </li>
+            <li>
+              <div class="goal-icon-box"><i class="fas fa-road"></i></div>
+              <div class="goal-text">
+                <strong>Reach 2000 XP</strong>
+                <p>You're only 460 XP away from the next badge!</p>
+              </div>
+            </li>
+            <li>
+              <div class="goal-icon-box"><i class="fas fa-lightbulb"></i></div>
+              <div class="goal-text">
+                <strong>Try the “Array Rotation” Challenge</strong>
+                <p>Level: Intermediate • Unlocks logic badge</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
 
-<!--      leaderboard section-->
-      <div class="leaderboard-section">
-        <div class="leaderboard-section-header">
-          <div class="leaderboard-section-icon"><i class="fas fa-trophy"></i></div>
-          <h2>Leaderboard</h2>
-        </div>
-
-        <table class="leaderboard-table">
-          <thead>
-          <tr>
-            <th><div class="rank-icon-box"><i class="fas fa-medal"></i></div></th>
-            <th>User</th>
-            <th>Points</th>
-            <th>Badges</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <td><div class="rank-icon-box"><i class="fas fa-crown"></i></div></td>
-            <td>Alice</td>
-            <td>1540 XP</td>
-            <td><span class="badge"><i class="fas fa-star"></i> Master</span></td>
-          </tr>
-          <tr>
-            <td><div class="rank-icon-box"><i class="fas fa-certificate"></i></div></td>
-            <td>Bob</td>
-            <td>1320 XP</td>
-            <td><span class="badge"><i class="fas fa-fire"></i> Streaker</span></td>
-          </tr>
-          <tr>
-            <td><div class="rank-icon-box"><i class="fas fa-rocket"></i></div></td>
-            <td>Charlie</td>
-            <td>1210 XP</td>
-            <td><span class="badge"><i class="fas fa-bolt"></i> Fast Starter</span></td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
-<!--       goals section-->
-      <div class="goals-section">
-        <div class="goals-section-header">
-          <div class="goals-section-icon"><i class="fas fa-bullseye"></i></div>
-          <h2>Upcoming Goals & Reminders</h2>
-        </div>
-
-        <ul class="goal-list">
-          <li>
-            <div class="goal-icon-box"><i class="fas fa-check-circle"></i></div>
-            <div class="goal-text">
-              <strong>Finish 5 Easy Challenges</strong>
-              <p>Complete by Sunday to maintain your streak.</p>
-            </div>
-          </li>
-          <li>
-            <div class="goal-icon-box"><i class="fas fa-road"></i></div>
-            <div class="goal-text">
-              <strong>Reach 2000 XP</strong>
-              <p>You're only 460 XP away from the next badge!</p>
-            </div>
-          </li>
-          <li>
-            <div class="goal-icon-box"><i class="fas fa-lightbulb"></i></div>
-            <div class="goal-text">
-              <strong>Try the “Array Rotation” Challenge</strong>
-              <p>Level: Intermediate • Unlocks logic badge</p>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-
-
-      <!--****************************************-->
-<!--    &lt;!&ndash; Profile Content &ndash;&gt;-->
-<!--    <section class="profile-content">-->
-<!--      <div class="container">-->
-<!--        <div class="profile-grid">-->
-<!--          &lt;!&ndash; Progress Section &ndash;&gt;-->
-<!--          <div class="profile-section">-->
-<!--            <h2 class="section-title">Progress Overview</h2>-->
-<!--            <div class="progress-cards">-->
-<!--              <div class="progress-card">-->
-<!--                <h3>Difficulty Breakdown</h3>-->
-<!--                <div class="difficulty-progress">-->
-<!--                  <div class="difficulty-item">-->
-<!--                    <span class="difficulty-label">Easy</span>-->
-<!--                    <div class="progress-bar">-->
-<!--                      <div class="progress-fill" style="width: 75%;"></div>-->
-<!--                    </div>-->
-<!--                    <span class="progress-text">9/12</span>-->
-<!--                  </div>-->
-<!--                  <div class="difficulty-item">-->
-<!--                    <span class="difficulty-label">Medium</span>-->
-<!--                    <div class="progress-bar">-->
-<!--                      <div class="progress-fill" style="width: 40%;"></div>-->
-<!--                    </div>-->
-<!--                    <span class="progress-text">4/10</span>-->
-<!--                  </div>-->
-<!--                  <div class="difficulty-item">-->
-<!--                    <span class="difficulty-label">Hard</span>-->
-<!--                    <div class="progress-bar">-->
-<!--                      <div class="progress-fill" style="width: 20%;"></div>-->
-<!--                    </div>-->
-<!--                    <span class="progress-text">2/10</span>-->
-<!--                  </div>-->
-<!--                </div>-->
-<!--              </div>-->
-
-<!--              <div class="progress-card">-->
-<!--                <h3>Categories Mastered</h3>-->
-<!--                <div class="category-tags">-->
-<!--                  <span class="category-tag completed">Arrays</span>-->
-<!--                  <span class="category-tag completed">Strings</span>-->
-<!--                  <span class="category-tag in-progress">Algorithms</span>-->
-<!--                  <span class="category-tag">Data Structures</span>-->
-<!--                  <span class="category-tag">Dynamic Programming</span>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-<!--          &lt;!&ndash; Recent Activity &ndash;&gt;-->
-<!--          <div class="profile-section">-->
-<!--            <h2 class="section-title">Recent Activity</h2>-->
-<!--            <div class="activity-list">-->
-<!--              <div class="activity-item">-->
-<!--                <div class="activity-icon">✅</div>-->
-<!--                <div class="activity-content">-->
-<!--                  <h4>Solved "Two Sum"</h4>-->
-<!--                  <p>Completed in 3 minutes • Easy</p>-->
-<!--                  <span class="activity-time">2 hours ago</span>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="activity-item">-->
-<!--                <div class="activity-icon">🎯</div>-->
-<!--                <div class="activity-content">-->
-<!--                  <h4>Started "Longest Palindromic Substring"</h4>-->
-<!--                  <p>Medium difficulty challenge</p>-->
-<!--                  <span class="activity-time">1 day ago</span>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--              <div class="activity-item">-->
-<!--                <div class="activity-icon">🏆</div>-->
-<!--                <div class="activity-content">-->
-<!--                  <h4>Earned "Array Master" Achievement</h4>-->
-<!--                  <p>Solved 10 array-based challenges</p>-->
-<!--                  <span class="activity-time">3 days ago</span>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-
-          <!-- Achievements -->
-<!--          <div class="profile-section">-->
-<!--            <h2 class="section-title">Achievements</h2>-->
-<!--            <div class="achievements-grid">-->
-<!--              <div class="achievement-card earned">-->
-<!--                <div class="achievement-icon">🎯</div>-->
-<!--                <h4>First Blood</h4>-->
-<!--                <p>Solve your first challenge</p>-->
-<!--              </div>-->
-<!--              <div class="achievement-card earned">-->
-<!--                <div class="achievement-icon">🔥</div>-->
-<!--                <h4>On Fire</h4>-->
-<!--                <p>7-day coding streak</p>-->
-<!--              </div>-->
-<!--              <div class="achievement-card earned">-->
-<!--                <div class="achievement-icon">📚</div>-->
-<!--                <h4>Array Master</h4>-->
-<!--                <p>Complete 10 array challenges</p>-->
-<!--              </div>-->
-<!--              <div class="achievement-card">-->
-<!--                <div class="achievement-icon">⚡</div>-->
-<!--                <h4>Speed Demon</h4>-->
-<!--                <p>Solve a challenge in under 60 seconds</p>-->
-<!--              </div>-->
-<!--              <div class="achievement-card">-->
-<!--                <div class="achievement-icon">🏆</div>-->
-<!--                <h4>Perfectionist</h4>-->
-<!--                <p>Solve 5 challenges without hints</p>-->
-<!--              </div>-->
-<!--              <div class="achievement-card">-->
-<!--                <div class="achievement-icon">🌟</div>-->
-<!--                <h4>Rising Star</h4>-->
-<!--                <p>Reach 2000 points</p>-->
-<!--              </div>-->
-<!--            </div>-->
-
-<!--        </div>-->
-      </div>
     </section>
     <script src="/scripts/profile.js"></script>
   </main>
@@ -478,274 +324,5 @@
   <script type="module" src="../scripts/app.js"></script>
   <script type="module" src="../scripts/theme.js"></script>
   
-<!--  <style>-->
-<!--    /* Additional styles for profile page */-->
-<!--    .profile-hero {-->
-<!--      background: linear-gradient(135deg, var(&#45;&#45;primary-color) 0%, var(&#45;&#45;secondary-color) 100%);-->
-<!--      padding: 4rem 0;-->
-<!--      text-align: center;-->
-<!--    }-->
-
-<!--    .profile-avatar {-->
-<!--      margin-bottom: 2rem;-->
-<!--    }-->
-
-<!--    .avatar-circle {-->
-<!--      width: 120px;-->
-<!--      height: 120px;-->
-<!--      border-radius: 50%;-->
-<!--      background: rgba(255, 255, 255, 0.2);-->
-<!--      display: flex;-->
-<!--      align-items: center;-->
-<!--      justify-content: center;-->
-<!--      margin: 0 auto;-->
-<!--      border: 4px solid rgba(255, 255, 255, 0.3);-->
-<!--    }-->
-
-<!--    .avatar-initial {-->
-<!--      font-size: 3rem;-->
-<!--      font-weight: 700;-->
-<!--      color: white;-->
-<!--    }-->
-
-<!--    .profile-hero__title {-->
-<!--      font-size: 2.5rem;-->
-<!--      font-weight: 700;-->
-<!--      margin-bottom: 0.5rem;-->
-<!--      color: white;-->
-<!--    }-->
-
-<!--    .profile-hero__subtitle {-->
-<!--      font-size: 1.2rem;-->
-<!--      color: rgba(255, 255, 255, 0.9);-->
-<!--    }-->
-
-<!--    .profile-stats {-->
-<!--      background: var(&#45;&#45;bg-secondary);-->
-<!--      padding: 3rem 0;-->
-<!--    }-->
-
-<!--    .stats-grid {-->
-<!--      display: grid;-->
-<!--      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));-->
-<!--      gap: 2rem;-->
-<!--    }-->
-
-<!--    .stat-card {-->
-<!--      background: white;-->
-<!--      padding: 2rem;-->
-<!--      border-radius: 1rem;-->
-<!--      text-align: center;-->
-<!--      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);-->
-<!--    }-->
-
-<!--    .stat-icon {-->
-<!--      font-size: 2rem;-->
-<!--      margin-bottom: 1rem;-->
-<!--    }-->
-
-<!--    .stat-number {-->
-<!--      font-size: 2.5rem;-->
-<!--      font-weight: 700;-->
-<!--      color: var(&#45;&#45;primary-color);-->
-<!--      margin-bottom: 0.5rem;-->
-<!--    }-->
-
-<!--    .stat-label {-->
-<!--      color: var(&#45;&#45;text-muted);-->
-<!--      font-weight: 500;-->
-<!--    }-->
-
-<!--    .profile-content {-->
-<!--      padding: 4rem 0;-->
-<!--    }-->
-
-<!--    .profile-grid {-->
-<!--      display: grid;-->
-<!--      gap: 3rem;-->
-<!--    }-->
-
-<!--    .profile-section {-->
-<!--      background: white;-->
-<!--      padding: 2rem;-->
-<!--      border-radius: 1rem;-->
-<!--      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);-->
-<!--    }-->
-
-<!--    .section-title {-->
-<!--      font-size: 1.5rem;-->
-<!--      font-weight: 600;-->
-<!--      margin-bottom: 2rem;-->
-<!--      color: var(&#45;&#45;text-dark);-->
-<!--    }-->
-
-<!--    .progress-cards {-->
-<!--      display: grid;-->
-<!--      gap: 2rem;-->
-<!--    }-->
-
-<!--    .progress-card {-->
-<!--      background: var(&#45;&#45;bg-light);-->
-<!--      padding: 1.5rem;-->
-<!--      border-radius: 0.75rem;-->
-<!--    }-->
-
-<!--    .progress-card h3 {-->
-<!--      margin-bottom: 1.5rem;-->
-<!--      color: var(&#45;&#45;text-dark);-->
-<!--    }-->
-
-<!--    .difficulty-progress {-->
-<!--      display: flex;-->
-<!--      flex-direction: column;-->
-<!--      gap: 1rem;-->
-<!--    }-->
-
-<!--    .difficulty-item {-->
-<!--      display: grid;-->
-<!--      grid-template-columns: 80px 1fr 60px;-->
-<!--      align-items: center;-->
-<!--      gap: 1rem;-->
-<!--    }-->
-
-<!--    .difficulty-label {-->
-<!--      font-weight: 500;-->
-<!--      font-size: 0.9rem;-->
-<!--    }-->
-
-<!--    .progress-bar {-->
-<!--      height: 8px;-->
-<!--      background: #e9ecef;-->
-<!--      border-radius: 4px;-->
-<!--      overflow: hidden;-->
-<!--    }-->
-
-<!--    .progress-fill {-->
-<!--      height: 100%;-->
-<!--      background: var(&#45;&#45;primary-color);-->
-<!--      transition: width 0.3s ease;-->
-<!--    }-->
-
-<!--    .progress-text {-->
-<!--      font-size: 0.875rem;-->
-<!--      color: var(&#45;&#45;text-muted);-->
-<!--      text-align: right;-->
-<!--    }-->
-
-<!--    .category-tags {-->
-<!--      display: flex;-->
-<!--      flex-wrap: wrap;-->
-<!--      gap: 0.75rem;-->
-<!--    }-->
-
-<!--    .category-tag {-->
-<!--      padding: 0.5rem 1rem;-->
-<!--      border-radius: 1rem;-->
-<!--      font-size: 0.875rem;-->
-<!--      font-weight: 500;-->
-<!--      background: #e9ecef;-->
-<!--      color: var(&#45;&#45;text-muted);-->
-<!--    }-->
-
-<!--    .category-tag.completed {-->
-<!--      background: var(&#45;&#45;primary-color);-->
-<!--      color: white;-->
-<!--    }-->
-
-<!--    .category-tag.in-progress {-->
-<!--      background: #ffc107;-->
-<!--      color: #856404;-->
-<!--    }-->
-
-<!--    .activity-list {-->
-<!--      display: flex;-->
-<!--      flex-direction: column;-->
-<!--      gap: 1.5rem;-->
-<!--    }-->
-
-<!--    .activity-item {-->
-<!--      display: flex;-->
-<!--      align-items: flex-start;-->
-<!--      gap: 1rem;-->
-<!--      padding: 1rem;-->
-<!--      background: var(&#45;&#45;bg-light);-->
-<!--      border-radius: 0.75rem;-->
-<!--    }-->
-
-<!--    .activity-icon {-->
-<!--      font-size: 1.5rem;-->
-<!--      margin-top: 0.25rem;-->
-<!--    }-->
-
-<!--    .activity-content h4 {-->
-<!--      margin-bottom: 0.5rem;-->
-<!--      color: var(&#45;&#45;text-dark);-->
-<!--    }-->
-
-<!--    .activity-content p {-->
-<!--      color: var(&#45;&#45;text-muted);-->
-<!--      margin-bottom: 0.5rem;-->
-<!--    }-->
-
-<!--    .activity-time {-->
-<!--      font-size: 0.875rem;-->
-<!--      color: var(&#45;&#45;text-muted);-->
-<!--    }-->
-
-<!--    .achievements-grid {-->
-<!--      display: grid;-->
-<!--      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));-->
-<!--      gap: 1.5rem;-->
-<!--    }-->
-
-<!--    .achievement-card {-->
-<!--      padding: 1.5rem;-->
-<!--      border-radius: 0.75rem;-->
-<!--      text-align: center;-->
-<!--      background: var(&#45;&#45;bg-light);-->
-<!--      opacity: 0.5;-->
-<!--      transition: opacity 0.3s ease;-->
-<!--    }-->
-
-<!--    .achievement-card.earned {-->
-<!--      opacity: 1;-->
-<!--      background: white;-->
-<!--      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);-->
-<!--    }-->
-
-<!--    .achievement-icon {-->
-<!--      font-size: 2rem;-->
-<!--      margin-bottom: 1rem;-->
-<!--    }-->
-
-<!--    .achievement-card h4 {-->
-<!--      margin-bottom: 0.5rem;-->
-<!--      color: var(&#45;&#45;text-dark);-->
-<!--    }-->
-
-<!--    .achievement-card p {-->
-<!--      color: var(&#45;&#45;text-muted);-->
-<!--      font-size: 0.875rem;-->
-<!--    }-->
-
-<!--    @media (max-width: 768px) {-->
-<!--      .profile-hero__title {-->
-<!--        font-size: 2rem;-->
-<!--      }-->
-
-<!--      .stats-grid {-->
-<!--        grid-template-columns: repeat(2, 1fr);-->
-<!--      }-->
-
-<!--      .difficulty-item {-->
-<!--        grid-template-columns: 1fr;-->
-<!--        gap: 0.5rem;-->
-<!--      }-->
-
-<!--      .achievements-grid {-->
-<!--        grid-template-columns: repeat(2, 1fr);-->
-<!--      }-->
-<!--    }-->
-<!--  </style>-->
 </body>
 </html>
