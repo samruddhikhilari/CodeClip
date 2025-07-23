@@ -669,5 +669,7 @@ a {
     justify-items: center;
   }
 }
-
+#navid {
+  background-color: skyblue;
+}
 
