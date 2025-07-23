@@ -49,12 +49,16 @@
         opacity: 0.8;
         z-index: 2;
       }
-
-      .bar.red { background-color: red; animation-delay: 0s; }
+/* // fails for users with color blindness  */
+      /* .bar.red { background-color: red; animation-delay: 0s; }
       .bar.green { background-color: yellow; animation-delay: 0.7s; }
       .bar.yellow { background-color: green; animation-delay: 1.4s; }
-      .bar.blue { background-color: rgb(22, 22, 240); animation-delay: 2.1s; }
+      .bar.blue { background-color: rgb(22, 22, 240); animation-delay: 2.1s; } */
 
+      .bar.red { background-color: #b00020; }       /* dark red */
+      .bar.yellow { background-color: #c77900; }    /* dark amber */
+      .bar.green { background-color: #006400; }     /* dark green */
+      .bar.blue { background-color: #0033cc; }      /* dark blue */
       @keyframes bounceY {
         from {
           transform: translateY(200px);
@@ -86,4 +90,10 @@
         width: 100%;
         margin-top: 0;
         /* background-color: green; */
+      }
+
+      /* This helps keyboard users see which element is focused — crucial for accessibility. */
+      :focus {
+        outline: 2px dashed #FFD700;
+        outline-offset: 4px;
       }

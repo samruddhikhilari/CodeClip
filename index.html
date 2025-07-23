@@ -21,7 +21,7 @@
 </head>
 <body>
   <!-- Header Component -->
-  <header class="header">
+  <header class="header" role="banner">
     <div class="container header__container">
       <div class="header__logo">
         <span class="logo-text">CodeClip</span>
@@ -44,7 +44,7 @@
   </header>
 
   <!-- Main Content -->
-  <main>
+  <main role="main">
     <!-- Challenges Hero Section -->
     <section class="challenges-hero">
       <div class="container">
@@ -62,10 +62,12 @@
     <!-- Controls (merged from both versions) -->
     <section class="challenges-filter">
       <div class="container">
+        <h2 id="filters-heading">Filter Challenges</h2>
+        <section class="challenges-filter" aria-labelledby="filters-heading">
         <div class="filter-controls">
           <div class="filter-group">
             <label for="difficulty-filter">Difficulty:</label>
-            <select id="difficulty-filter" class="filter-select">
+            <select id="difficulty-filter" class="filter-select" aria-label="Filter challenges by difficulty">
               <option value="">All Levels</option>
               <option value="easy">Easy</option>
               <option value="medium">Medium</option>
@@ -74,7 +76,7 @@
           </div>
           <div class="filter-group">
             <label for="category-filter">Category:</label>
-            <select id="category-filter" class="filter-select">
+            <select id="category-filter" class="filter-select" aria-label="Filter challenges by category">
               <option value="">All Categories</option>
               <option value="arrays">Arrays</option>
               <option value="strings">Strings</option>
@@ -86,13 +88,17 @@
             </select>
           </div>
           <div class="search-group">
-            <input type="text" id="search-challenges" placeholder="Search challenges..." class="search-input">
+            <!-- <input type="text" id="search-challenges" placeholder="Search challenges..." class="search-input"> -->
+             <input type="text" id="search-challenges" placeholder="Search challenges..." class="search-input" aria-label="Search coding challenges by title or tag">
+
           </div>
         </div>
       </div>
     </section>
 
     <!-- Challenges Grid -->
+     <h2 id="challenge-heading">Available Coding Challenges</h2>
+    <section class="challenges-grid" aria-labelledby="challenge-heading">
     <section class="challenges-grid">
       <div class="container">
         <div class="challenges-list" id="challengesList">
@@ -110,7 +116,9 @@
               <span class="category-tag">Hash Table</span>
             </div>
             <div class="challenge-card__actions">
-              <a href="/editor" data-route="/editor" class="btn btn-primary btn-sm">Solve Challenge</a>
+              <!-- <a href="/editor" data-route="/editor" class="btn btn-primary btn-sm">Solve Challenge</a> -->
+               <a href="/editor" data-route="/editor" class="btn btn-primary btn-sm" aria-label="Solve challenge Two Sum">Solve Challenge</a>
+
             </div>
           </div>
 
@@ -127,7 +135,7 @@
               <span class="category-tag">Dynamic Programming</span>
             </div>
             <div class="challenge-card__actions">
-              <a href="/editor" data-route="/editor" class="btn btn-primary btn-sm">Solve Challenge</a>
+              <a href="/editor" data-route="/editor" class="btn btn-primary btn-sm" aria-label="Solve Challenge Longest Pallindromic Substring">Solve Challenge</a>
             </div>
           </div>
 
@@ -144,7 +152,7 @@
               <span class="category-tag">Divide and Conquer</span>
             </div>
             <div class="challenge-card__actions">
-              <a href="/editor" data-route="/editor" class="btn btn-primary btn-sm">Solve Challenge</a>
+              <a href="/editor" data-route="/editor" class="btn btn-primary btn-sm" aria-label="Solve challenge Merge K Sorted Lists">Solve Challenge</a>
             </div>
           </div>
 
@@ -161,7 +169,7 @@
               <span class="category-tag">Strings</span>
             </div>
             <div class="challenge-card__actions">
-              <a href="/editor" data-route="/editor" class="btn btn-primary btn-sm">Solve Challenge</a>
+              <a href="/editor" data-route="/editor" class="btn btn-primary btn-sm" aria-label="Solve challenge valid Parentheses">Solve Challenge</a>
             </div>
           </div>
         </div>
@@ -174,7 +182,7 @@
   </main>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container">
       <div class="footer__content">
         <div class="footer__section">
