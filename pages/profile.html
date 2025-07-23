@@ -213,7 +213,102 @@
           </div>
         </div>
       </div>
-<!--****************************************-->
+<!--progress bars-->
+      <div class="charts-container">
+        <div class="chart-box">
+          <div class="progress-header">
+            <div class="progress-icon-box">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h3>Coding Time (Hours)</h3>
+          </div>
+          <canvas id="codingTimeChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+          <div class="progress-header">
+            <div class="progress-icon-box">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <h3>Challenges Completed</h3>
+          </div>
+          <canvas id="challengesChart"></canvas>
+        </div>
+      </div>
+
+<!--      leaderboard section-->
+      <div class="leaderboard-section">
+        <div class="leaderboard-section-header">
+          <div class="leaderboard-section-icon"><i class="fas fa-trophy"></i></div>
+          <h2>Leaderboard</h2>
+        </div>
+
+        <table class="leaderboard-table">
+          <thead>
+          <tr>
+            <th><div class="rank-icon-box"><i class="fas fa-medal"></i></div></th>
+            <th>User</th>
+            <th>Points</th>
+            <th>Badges</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td><div class="rank-icon-box"><i class="fas fa-crown"></i></div></td>
+            <td>Alice</td>
+            <td>1540 XP</td>
+            <td><span class="badge"><i class="fas fa-star"></i> Master</span></td>
+          </tr>
+          <tr>
+            <td><div class="rank-icon-box"><i class="fas fa-certificate"></i></div></td>
+            <td>Bob</td>
+            <td>1320 XP</td>
+            <td><span class="badge"><i class="fas fa-fire"></i> Streaker</span></td>
+          </tr>
+          <tr>
+            <td><div class="rank-icon-box"><i class="fas fa-rocket"></i></div></td>
+            <td>Charlie</td>
+            <td>1210 XP</td>
+            <td><span class="badge"><i class="fas fa-bolt"></i> Fast Starter</span></td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+<!--       goals section-->
+      <div class="goals-section">
+        <div class="goals-section-header">
+          <div class="goals-section-icon"><i class="fas fa-bullseye"></i></div>
+          <h2>Upcoming Goals & Reminders</h2>
+        </div>
+
+        <ul class="goal-list">
+          <li>
+            <div class="goal-icon-box"><i class="fas fa-check-circle"></i></div>
+            <div class="goal-text">
+              <strong>Finish 5 Easy Challenges</strong>
+              <p>Complete by Sunday to maintain your streak.</p>
+            </div>
+          </li>
+          <li>
+            <div class="goal-icon-box"><i class="fas fa-road"></i></div>
+            <div class="goal-text">
+              <strong>Reach 2000 XP</strong>
+              <p>You're only 460 XP away from the next badge!</p>
+            </div>
+          </li>
+          <li>
+            <div class="goal-icon-box"><i class="fas fa-lightbulb"></i></div>
+            <div class="goal-text">
+              <strong>Try the “Array Rotation” Challenge</strong>
+              <p>Level: Intermediate • Unlocks logic badge</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+
+
+      <!--****************************************-->
 <!--    &lt;!&ndash; Profile Content &ndash;&gt;-->
 <!--    <section class="profile-content">-->
 <!--      <div class="container">-->
@@ -332,6 +427,7 @@
 <!--        </div>-->
       </div>
     </section>
+    <script src="/scripts/profile.js"></script>
   </main>
 
   <!-- Footer -->
