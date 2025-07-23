@@ -1,6 +1,8 @@
 
     // 1. Time Spent Coding (Line Chart)
-    const codingTimeCtx = document.getElementById('codingTimeChart').getContext('2d');
+    const codingTimeCanvas = document.getElementById('codingTimeChart');
+    if (!codingTimeCanvas) return;
+    const codingTimeCtx = codingTimeCanvas.getContext('2d');
     new Chart(codingTimeCtx, {
     type: 'line',
     data: {
