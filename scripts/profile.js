@@ -1,8 +1,6 @@
 
     // 1. Time Spent Coding (Line Chart)
-    const codingTimeCanvas = document.getElementById('codingTimeChart');
-    if (!codingTimeCanvas) return;
-    const codingTimeCtx = codingTimeCanvas.getContext('2d');
+    const codingTimeCtx = document.getElementById('codingTimeChart').getContext('2d');
     new Chart(codingTimeCtx, {
     type: 'line',
     data: {
@@ -24,9 +22,8 @@
 });
 
     // 2. Challenges Completed (Bar Chart)
-    const challengesCanvas = document.getElementById('challengesChart');
-    if (!challengesCanvas) return;
-    const challengesCtx = challengesCanvas.getContext('2d');
+    const challengesCtx = document.getElementById('challengesChart').getContext('2d');
+
     new Chart(challengesCtx, {
     type: 'bar',
     data: {
