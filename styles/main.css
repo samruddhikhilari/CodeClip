@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: row;
 }
-.hero__text.hero__cta a{
+.hero__text .hero__cta a{
   flex: 1;
 }
 @media (max-width:939px){
