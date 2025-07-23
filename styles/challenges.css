@@ -201,7 +201,18 @@ body {
   border-radius: 50%;
 }
 
+
 .copy-button:focus {
   outline: 2px solid #00f;
   outline-offset: 2px;
+
+/* Hamburger CSS */
+.hamburger {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: var(--text-color);
+  margin: 4px 0;
+  transition: 0.4s;
+
 }
