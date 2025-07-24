@@ -427,5 +427,5 @@ input:focus, textarea:focus, select:focus, button:focus {
     }
 
     .to-top:hover {
-      background-color: #059669;
+      background-color: green;
     }
