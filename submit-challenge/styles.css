@@ -367,6 +367,7 @@ input:focus, textarea:focus, select:focus, button:focus {
   0% { transform: translate(-50%, -50%) rotate(0deg); }
   100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
+
 .chat-container {
       width: 400px;
       /* margin: 50px auto; */
