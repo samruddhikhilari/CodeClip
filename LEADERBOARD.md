@@ -6,7 +6,7 @@ This leaderboard tracks contributors who have completed issues labeled as `level
 
 | Username | Level 1 | Level 2 | Level 3 | PRs Merged |
 |----------|---------|---------|---------|-------------|
-| [@Suhani1234-5](https://github.com/Suhani1234-5) | 0 | 1 | 0 | 5 |
+| [@Suhani1234-5](https://github.com/Suhani1234-5) | 0 | 1 | 1 | 5 |
 | [@Shalini22-ui](https://github.com/Shalini22-ui) | 0 | 1 | 0 | 4 |
 | [@cosmicTitiksha](https://github.com/cosmicTitiksha) | 0 | 1 | 0 | 4 |
 | [@Ishuuu1213](https://github.com/Ishuuu1213) | 1 | 1 | 0 | 2 |
@@ -22,6 +22,7 @@ This leaderboard tracks contributors who have completed issues labeled as `level
 | [@shobanCodebase](https://github.com/shobanCodebase) | 1 | 0 | 0 | 1 |
 | [@supriya46788](https://github.com/supriya46788) | 1 | 0 | 0 | 1 |
 | [@nicksboson](https://github.com/nicksboson) | 1 | 0 | 0 | 1 |
+| [@Copilot](https://github.com/Copilot) | 0 | 0 | 1 | 1 |
 | [@Soumyosish](https://github.com/Soumyosish) | 0 | 1 | 0 | 1 |
 | [@VidhanThakur09](https://github.com/VidhanThakur09) | 0 | 1 | 0 | 1 |
 | [@Ishika-codeit](https://github.com/Ishika-codeit) | 2 | 0 | 0 | 0 |
