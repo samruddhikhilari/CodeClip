@@ -424,7 +424,7 @@ footer {
 .footer-contact-links .btn {
     width: 100%;
     max-width: 250px;
-    text-align: left;
+    text-align: center;
     background: #2563eb;
     color: #fff;
     border: none;
