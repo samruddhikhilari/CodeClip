@@ -383,64 +383,81 @@ html {
 /* ================== About Styles End Here ================== */
 
 
-/* ================== Footer Styles Start Here ================== */
+/* --- Footer Redesign --- */
 footer {
     padding-top: 2rem;
     background-color: #f8fafc;
+    border-top: 1px solid #e5e7eb;
 }
-
-footer .row {
-    display: flex;
-    align-items: start;
-    justify-content: space-evenly;
-}
-
-.footer-About h4 {
+.footer-logo {
     font-size: 2.1rem;
     font-weight: bolder;
     color: #2563eb;
 }
-
-.footer-About h4 span {
-    color: black;
+.footer-logo span {
+    color: #1e2c44;
 }
-
-.footer-About p {
-    opacity: 0.8;
-}
-
-.footer-ImpLinks h4 {
+.footer-title {
+    font-size: 1.15rem;
     font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1e2c44;
 }
-
-.footer-ImpLinks ul {
-    list-style-type: none;
-    padding: 0;
+.footer-links {
+    padding-left: 0;
+    margin-bottom: 0;
 }
-
-.footer-ImpLinks ul li {
-    margin: 10px 0;
-    transition: all 0.2s ease-in-out;
-    opacity: 0.8;
+.footer-links li {
+    margin-bottom: 0.7rem;
 }
-
-.footer-ImpLinks ul li:hover {
-    transform: translateX(5px);
+.footer-links a {
+    color: #1e2c44;
+    text-decoration: none;
+    font-size: 1rem;
+    opacity: 0.85;
+    transition: color 0.2s, opacity 0.2s;
+}
+.footer-links a:hover {
+    color: #2563eb;
     opacity: 1;
 }
-
-.footer-ImpLinks ul li a {
-    text-decoration: none;
-    color: black;
+.footer-contact-links .btn {
+    width: 100%;
+    max-width: 250px;
+    text-align: left;
+    background: #2563eb;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    transition: background 0.2s;
 }
-
-.footerNote {
-    text-align: center;
-    margin-bottom: 0;
-    padding-bottom: 1rem;
+.footer-contact-links .btn:hover {
+    background: #1e2c44;
+    color: #fff;
 }
-
-/* ================== Footer Styles End Here ================== */
+@media (max-width: 768px) {
+    .footer-logo {
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-title {
+        text-align: center;
+    }
+    .footer-links, .footer-contact-links {
+        align-items: center;
+        text-align: center;
+    }
+    footer .row {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-contact-links .btn {
+        text-align: center;
+    }
+}
 
 /* ================== Media queries start here for home screen and carousel buttons ================== */
 
