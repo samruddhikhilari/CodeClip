@@ -23,7 +23,6 @@ This leaderboard tracks contributors who have completed issues labeled as `level
 | [@shobanCodebase](https://github.com/shobanCodebase) | 1 | 0 | 0 | 1 |
 | [@supriya46788](https://github.com/supriya46788) | 1 | 0 | 0 | 1 |
 | [@nicksboson](https://github.com/nicksboson) | 1 | 0 | 0 | 1 |
-| [@Copilot](https://github.com/Copilot) | 0 | 0 | 1 | 1 |
 | [@Soumyosish](https://github.com/Soumyosish) | 0 | 1 | 0 | 1 |
 | [@VidhanThakur09](https://github.com/VidhanThakur09) | 0 | 1 | 0 | 1 |
 | [@Ishika-codeit](https://github.com/Ishika-codeit) | 2 | 0 | 0 | 0 |
