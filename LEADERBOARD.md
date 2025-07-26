@@ -18,6 +18,7 @@ This leaderboard tracks contributors who have completed issues labeled as `level
 | [@Shrutik-0101](https://github.com/Shrutik-0101) | 0 | 1 | 0 | 1 |
 | [@Kalika-Jay](https://github.com/Kalika-Jay) | 1 | 0 | 0 | 1 |
 | [@Sanyam2511](https://github.com/Sanyam2511) | 1 | 0 | 0 | 1 |
+| [@Srivarshan-T](https://github.com/Srivarshan-T) | 1 | 0 | 0 | 1 |
 | [@pbln](https://github.com/pbln) | 1 | 0 | 0 | 1 |
 | [@shobanCodebase](https://github.com/shobanCodebase) | 1 | 0 | 0 | 1 |
 | [@supriya46788](https://github.com/supriya46788) | 1 | 0 | 0 | 1 |
