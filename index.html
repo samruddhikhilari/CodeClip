@@ -1,281 +1,551 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home - CodeClip</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeClip</title>
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Oooh+Baby&family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
+    <!-- ================ Favicon ================  -->
+    <link
+      rel="shortcut icon"
+      href="assets/favicon/codeClip-favicon.png"
+      type="image/png"
+    />
 
-  <!-- Your CSS file -->
-  <link rel="stylesheet" href="styles.css" />
-</head>
+    <!-- ================ Meta Tags ================  -->
+    <meta
+      name="keywords"
+      content="CodeClip, Coding Challenges, Open Source, GSSoC, Frontend Practice, JavaScript Logics, GitHub Contributions, Web Development Tasks"
+    />
+    <meta
+      name="description"
+      content="CodeClip is a browser-based platform where developers solve real-world coding challenges, practice frontend and logic tasks, and contribute to open source. Proudly built for GSSoC 2025."
+    />
+    <meta name="robots" content="index, follow" />
 
-<body>
-  <!-- Header -->
-  <header class="header" role="banner">
-    <div class="container header__container">
-      <div class="header__logo">
-        <span class="logo-text">CodeClip</span>
-      </div>
-      <nav class="header__nav" id="navMenu" aria-label="Primary navigation">
-        <!-- Header Navigation -->
-        <ul class="nav__list">
-          <li><a href="/CodeClip/index.html" data-route="/" class="nav__link active" aria-current="page">Home</a></li>
-          <li><a href="/CodeClip/pages/challenges.html" data-route="/challenges" class="nav__link">Challenges</a></li>
-          <li><a href="/CodeClip/pages/editor.html" data-route="/editor" class="nav__link">Editor</a></li>
-          <li><a href="/CodeClip/pages/profile.html" data-route="/profile" class="nav__link">Profile</a></li>
-          <li><a href="/CodeClip/pages/about.html" data-route="/about" class="nav__link">About</a></li>
-        </ul>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="CodeClip - Code, Run & Contribute" />
+    <meta
+      property="og:description"
+      content="Solve coding challenges, contribute to open source, and climb the leaderboard on CodeClip. A GSSoC 2025 project for developers."
+    />
+
+    <meta
+      property="twitter:title"
+      content="CodeClip - Code, Run & Contribute"
+    />
+    <meta
+      property="twitter:description"
+      content="Solve coding challenges, contribute to open source, and climb the leaderboard on CodeClip. A GSSoC 2025 project for developers."
+    />
+
+    <!-- ================ Vendor CSS ================  -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/owl.carousel.min.css" />
+    <link rel="stylesheet" href="styles/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="styles/fontawesome.css" />
+
+    <!-- ================ Custom CSS ================  -->
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+
+  <body>
+    <!-- ================================ Header Section Start Here ================================ -->
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#homeSection">Code<span>Clip</span></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="#homeSection"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#challengeSection">Challenges</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#leaderboardSection">Leaderboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aboutSection">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactFooter">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <button
-        class="header__toggle"
-        id="navToggle"
-        aria-label="Open navigation menu"
-        aria-expanded="false"
-        aria-controls="navMenu"
-      >
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
-        <span class="hamburger"></span>
-      </button>
-    </div>
-  </header>
+    </header>
+    <!-- ================================ Header Section Start Here ================================ -->
 
-  <!-- Main Content -->
-  <main role="main">
-    <!-- Hero Section -->
-    <section class="hero challenges-hero">
-      <div class="container hero__content">
-        <div class="hero__text challenges-hero__content">
-          <h1 class="hero__title challenges-hero__title">
-            Code <span id="element"></span>
-          </h1>
-          <p class="hero__description challenges-hero__description">
-            Test your skills with our curated collection of coding challenges. From beginner-friendly problems to advanced algorithms, there's something for every developer.
-          </p>
-          <div class="hero__cta">
-            <!-- Hero CTA Buttons -->
-            <a href="/CodeClip/pages/editor.html" class="btn btn-primary" aria-label="Start coding challenge">🎯 Start Coding</a>
-            <a href="/CodeClip/pages/challenges.html" class="btn btn-secondary" aria-label="View all challenges">📚 View Challenges</a>
-          </div>
-        </div>
-
-        <div class="hero__visual">
-          <div class="code-window" aria-hidden="true">
-            <div class="code-window__header">
-              <span class="circle red"></span>
-              <span class="circle yellow"></span>
-              <span class="circle green"></span>
-            </div>
-            <div class="code-content">
-              <div class="code-line"><span class="comment">// Welcome to CodeClip</span></div>
-              <div class="code-line">
-                <span class="keyword">function</span>
-                <span class="string">solveProblem</span>() {
-              </div>
-              <div class="code-line">
-                &nbsp;&nbsp;<span class="keyword">return</span>
-                <span class="string">'Success!'</span>;
-              </div>
-              <div class="code-line">}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Filter Section -->
-    <section class="challenges-filter" aria-labelledby="filters-heading">
-      <div class="container filter-controls">
-        <h2 id="filters-heading" class="visually-hidden">Filter Challenges</h2>
-
-        <div class="filter-group">
-          <label for="difficulty-filter">Difficulty:</label>
-          <select
-            id="difficulty-filter"
-            class="filter-select"
-            aria-label="Filter challenges by difficulty"
-          >
-            <option value="">All Levels</option>
-            <option value="easy">Easy</option>
-            <option value="medium">Medium</option>
-            <option value="hard">Hard</option>
-          </select>
-        </div>
-
-        <div class="filter-group">
-          <label for="category-filter">Category:</label>
-          <select
-            id="category-filter"
-            class="filter-select"
-            aria-label="Filter challenges by category"
-          >
-            <option value="">All Categories</option>
-            <option value="arrays">Arrays</option>
-            <option value="strings">Strings</option>
-            <option value="algorithms">Algorithms</option>
-            <option value="data-structures">Data Structures</option>
-            <option value="frontend">Frontend</option>
-            <option value="backend">Backend</option>
-            <option value="fullstack">Fullstack</option>
-          </select>
-        </div>
-
-        <div class="search-group">
-          <input
-            type="search"
-            id="search-challenges"
-            placeholder="Search challenges..."
-            class="search-input"
-            aria-label="Search coding challenges by title or tag"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Challenges Grid -->
-    <section class="challenges-grid" aria-labelledby="challenge-heading">
+    <!-- ================================ Hero Section Start Here ================================ -->
+    <section id="homeSection" class="heroSection">
       <div class="container">
-        <h2 id="challenge-heading" class="visually-hidden">Available Coding Challenges</h2>
+        <div class="row heroSection-Container">
+          <div class="col-12 col-md-6 heroSection-Left">
+            <div class="gssocContainer shinning-effect">
+              <img
+                src="assets/images/hero-section/gssoc-log.png"
+                class="img-fluid gssoc-logo"
+                alt="gssoc logo"
+              />
+              <p>GSSOC 2025</p>
+            </div>
 
-        <div class="challenges-list" id="challengesList">
-          <!-- Sample challenge card -->
-          <article
-            class="challenge-card"
-            data-difficulty="easy"
-            data-category="arrays"
-            tabindex="0"
-            aria-label="Challenge Two Sum, difficulty easy, category arrays"
-          >
-            <header class="challenge-card__header">
-              <h3 class="challenge-card__title">Two Sum</h3>
-              <span class="difficulty-badge difficulty-easy">Easy</span>
-            </header>
-            <p class="challenge-card__description">
-              Given an array of integers and a target sum, return indices of two numbers that add up to the target.
+            <h1>
+              Code Run <br />
+              <span class="blueCol">Contribute</span>
+            </h1>
+            <p class="heroDescription">
+              CodeClip is a lightweight, browser-based platform designed to make
+              coding practice simple, accessible, and collaborative. Whether
+              you're a beginner looking to sharpen your skills or an aspiring
+              contributor to open source, CodeClip offers a clean interface
+              where you can solve real-world coding challenges, run your code
+              live, and share your solutions — all without any setup, Built
+              entirely with HTML, CSS, and JavaScript, CodeClip is not just a
+              tool but a learning experience itself. It’s an open-source project
+              proudly developed as part of
+              <strong>GirlScript Summer of Code (GSSoC)</strong>, aimed at
+              empowering developers through hands-on practice and meaningful
+              contributions.
             </p>
-            <div class="challenge-card__meta">
-              <span class="category-tag">Arrays</span>
-              <span class="category-tag">Hash Table</span>
-            </div>
-            <div class="challenge-card__actions">
-              <!-- Challenge Card Actions -->
-              <a href="/CodeClip/pages/editor.html" class="btn btn-primary btn-sm" aria-label="Solve challenge Two Sum">Solve Challenge</a>
-            </div>
-          </article>
 
-          <article
-            class="challenge-card"
-            data-difficulty="medium"
-            data-category="strings"
-            tabindex="0"
-            aria-label="Challenge Longest Palindromic Substring, difficulty medium, category strings"
-          >
-            <header class="challenge-card__header">
-              <h3 class="challenge-card__title">Longest Palindromic Substring</h3>
-              <span class="difficulty-badge difficulty-medium">Medium</span>
-            </header>
-            <p class="challenge-card__description">
-              Given a string, find the longest palindromic substring within it.
+            <!-- ==== Do Changes According to requirements === -->
+            <div class="ctaBtn-Container">
+              <button class="btn heroSectionBtn">
+                <i class="fa-solid fa-gear"></i> Code
+              </button>
+              <button class="btn heroSectionBtn">
+                <i class="fa-solid fa-cloud"></i> Run
+              </button>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 heroSection-Right d-none d-md-block">
+            <img
+              src="assets/images/hero-section/hero-Img.png"
+              class="img-fluid"
+              alt="hero section image"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================================ Hero Section End Here ================================ -->
+
+    <!-- ================================ Challenge Section Start Here ================================ -->
+    <section id="challengeSection">
+      <div class="container">
+        <div class="row challengeContainer">
+          <!-- ==== Card 1 ==== -->
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-TopContainer">
+                  <h5 class="card-Header">Frontend Challenges</h5>
+                  <p class="card-Level">EASY</p>
+                </div>
+
+                <p class="card-Participate">
+                  <i class="fa-solid fa-people-group"></i> 135 coders joined
+                </p>
+                <p class="card-Text">
+                  Build real UI components using HTML, CSS, and JavaScript.
+                  These tasks help you improve your layout, styling,
+                  responsiveness, and interactivity,no frameworks, just clean
+                  frontend skills.
+                </p>
+
+                <div class="card-CTAButton">
+                  <!-- === Create webpage of frontend challenge and add link here === -->
+                  <a href="#" class="card-Btn">Join Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==== Card 2 ==== -->
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-TopContainer">
+                  <h5 class="card-Header">JavaScript Logics</h5>
+                  <p class="card-Level medium-Col">MEDIUM</p>
+                </div>
+
+                <p class="card-Participate">
+                  <i class="fa-solid fa-people-group"></i> 189 coders joined
+                </p>
+                <p class="card-Text">
+                  Master the core of JavaScript by solving logic-based problems
+                  that boost your thinking and problem-solving skills. Perfect
+                  for beginners and intermediates.
+                </p>
+
+                <div class="card-CTAButton">
+                  <!-- === Create webpage of javascript logics and add link here === -->
+                  <a href="#" class="card-Btn">Join Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==== Card 3 ==== -->
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-TopContainer">
+                  <h5 class="card-Header">Backend Basics</h5>
+                  <p class="card-Level hard-Col">HARD</p>
+                </div>
+
+                <p class="card-Participate">
+                  <i class="fa-solid fa-people-group"></i> 150 coders joined
+                </p>
+                <p class="card-Text">
+                  Learn the fundamentals of backend development through simple
+                  tasks using APIs, data handling, and server-side logic. A
+                  great start for aspiring full-stack developers.
+                </p>
+
+                <div class="card-CTAButton">
+                  <!-- === Create webpage of backend bbasic and add link here === -->
+                  <a href="#" class="card-Btn">Join Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==== Card 4 ==== -->
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-TopContainer">
+                  <h5 class="card-Header">UI Design Tasks</h5>
+                  <p class="card-Level">EASY</p>
+                </div>
+
+                <p class="card-Participate">
+                  <i class="fa-solid fa-people-group"></i> 120 coders joined
+                </p>
+                <p class="card-Text">
+                  Practice building beautiful and functional UI components using
+                  HTML and CSS. Perfect for improving your design sense and
+                  layout skills.
+                </p>
+
+                <div class="card-CTAButton">
+                  <!-- === Create webpage of ui design challenge and add link here === -->
+                  <a href="#" class="card-Btn">Join Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ==== Card 5 ==== -->
+          <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-TopContainer">
+                  <h5 class="card-Header">Open Source Challenges</h5>
+                  <p class="card-Level medium-Col">MEDIUM</p>
+                </div>
+
+                <p class="card-Participate">
+                  <i class="fa-solid fa-people-group"></i> 200 coders joined
+                </p>
+                <p class="card-Text">
+                  Practice real world contribution workflows using Git and
+                  GitHub. You'll learn how to contribute to projects, manage
+                  pull requests.
+                </p>
+
+                <div class="card-CTAButton">
+                  <!-- === Create webpages of open source challenge and add link here === -->
+                  <a href="#" class="card-Btn">Join Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================================ Challenge Section End Here ================================ -->
+
+    <!-- ================================ Leaderboard Section Starts Here ================================ -->
+    <section id="leaderboardSection">
+      <div class="container">
+        <h3 class="secHeader"><span class="">Top Coder</span> of the Week</h3>
+        <p class="leaderboard-Para">
+          Meet our top coders who accepted challenges, wrote great code,
+          contributed to open source, and stood out as the best performers of
+          the week.
+        </p>
+        <div class="row">
+          <!-- ======= owl cousel =========== -->
+          <div class="owl-carousel owl-theme">
+            <!-- === top coder 1 === -->
+            <div class="item">
+              <div class="card leaderboard-Card">
+                <div class="card-body leaderBoard-Container">
+                  <div class="leaderBoard-userContainer">
+                    <img
+                      src="assets/images/leaderboard-section/user-1.png"
+                      class="img-fluid leaderboard-Img"
+                      alt="user 1"
+                    />
+                  </div>
+
+                  <h5 class="card-title userName">Rahul</h5>
+
+                  <div class="leaderboradUser-RankContainer">
+                    <p class="rankPosition">
+                      <i class="fa-solid fa-award"></i> 1st Rank
+                    </p>
+                    <p class="rankPoints">
+                      <i class="fa-solid fa-medal"></i> 1080 Points
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- === top coder 2 === -->
+            <div class="item">
+              <div class="card leaderboard-Card">
+                <div class="card-body leaderBoard-Container">
+                  <div class="leaderBoard-userContainer">
+                    <img
+                      src="assets/images/leaderboard-section/user-2.png"
+                      class="img-fluid leaderboard-Img"
+                      alt="user 2"
+                    />
+                  </div>
+
+                  <h5 class="card-title userName">Manisha</h5>
+
+                  <div class="leaderboradUser-RankContainer">
+                    <p class="rankPosition">
+                      <i class="fa-solid fa-award"></i> 2nd Rank
+                    </p>
+                    <p class="rankPoints">
+                      <i class="fa-solid fa-medal"></i> 1060 Points
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- === top coder 3 === -->
+            <div class="item">
+              <div class="card leaderboard-Card">
+                <div class="card-body leaderBoard-Container">
+                  <div class="leaderBoard-userContainer">
+                    <img
+                      src="assets/images/leaderboard-section/user-1.png"
+                      class="img-fluid leaderboard-Img"
+                      alt="user 3"
+                    />
+                  </div>
+
+                  <h5 class="card-title userName">Pankaj</h5>
+
+                  <div class="leaderboradUser-RankContainer">
+                    <p class="rankPosition">
+                      <i class="fa-solid fa-award"></i> 3rd Rank
+                    </p>
+                    <p class="rankPoints">
+                      <i class="fa-solid fa-medal"></i> 1055 Points
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- === top coder 4 === -->
+            <div class="item">
+              <div class="card leaderboard-Card">
+                <div class="card-body leaderBoard-Container">
+                  <div class="leaderBoard-userContainer">
+                    <img
+                      src="assets/images/leaderboard-section/user-2.png"
+                      class="img-fluid leaderboard-Img"
+                      alt="user 4"
+                    />
+                  </div>
+
+                  <h5 class="card-title userName">Simarn</h5>
+
+                  <div class="leaderboradUser-RankContainer">
+                    <p class="rankPosition">
+                      <i class="fa-solid fa-award"></i> 4th Rank
+                    </p>
+                    <p class="rankPoints">
+                      <i class="fa-solid fa-medal"></i> 1030 Points
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- === top coder 5 === -->
+            <div class="item">
+              <div class="card leaderboard-Card">
+                <div class="card-body leaderBoard-Container">
+                  <div class="leaderBoard-userContainer">
+                    <img
+                      src="assets/images/leaderboard-section/user-1.png"
+                      class="img-fluid leaderboard-Img"
+                      alt="user 5"
+                    />
+                  </div>
+
+                  <h5 class="card-title userName">Rahul</h5>
+
+                  <div class="leaderboradUser-RankContainer">
+                    <p class="rankPosition">
+                      <i class="fa-solid fa-award"></i> 5th Rank
+                    </p>
+                    <p class="rankPoints">
+                      <i class="fa-solid fa-medal"></i> 1020 Points
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ================================ Leaderboard Section End Here ================================ -->
+
+    <!-- ================================ About Section Start Here ================================ -->
+    <section id="aboutSection">
+      <div class="container">
+        <h3 class="secHeader"><span>About</span> CodeClip</h3>
+        <div class="row aboutContainer">
+          <div class="col-10">
+            <p>
+              CodeClip is a lightweight, browser-based platform designed to make
+              coding practice simple, accessible, and collaborative. Whether
+              you're a beginner looking to sharpen your skills or an aspiring
+              contributor to open source, CodeClip offers a clean interface
+              where you can solve real-world coding challenges, run your code
+              live, and share your solutions — all without any setup, Built
+              entirely with HTML, CSS, and JavaScript, CodeClip is not just a
+              tool but a learning experience itself. It’s an open-source project
+              proudly developed as part of
+              <strong>GirlScript Summer of Code (GSSoC)</strong>, aimed at
+              empowering developers through hands-on practice and meaningful
+              contributions.
             </p>
-            <div class="challenge-card__meta">
-              <span class="category-tag">Strings</span>
-              <span class="category-tag">Dynamic Programming</span>
-            </div>
-            <div class="challenge-card__actions">
-              <!-- Challenge Card Actions -->
-              <a href="/CodeClip/pages/editor.html" class="btn btn-primary btn-sm" aria-label="Solve challenge Longest Palindromic Substring">Solve Challenge</a>
-            </div>
-          </article>
 
-          <!-- Add more challenge cards here if needed -->
+            <p class="ctaBtn">
+              <a
+                href="https://github.com/opensource-society/CodeClip"
+                target="_blank"
+                title="click here to start contributing in CodeClip Project under GSSoC'25"
+                class="aboutCTA-Btn"
+                >Contribute to CodeClip</a
+              >
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Optional Challenge Vault Section -->
-    <section class="challenge-vault-section">
-      <div class="vault-card">
-        <div class="vault-icon-circle">
-          <svg height="40" width="40" viewBox="0 0 20 20" fill="none">
-            <circle cx="10" cy="10" r="10" fill="#2563eb"/>
-            <path d="M10 6a2 2 0 012 2v1h-4V8a2 2 0 012-2zm-4 3a4 4 0 118 0v1a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2a2 2 0 012-2V9z" fill="#fff"/>
-          </svg>
+    <!-- ================================ Footer Section Start Here ================================ -->
+    <footer id="contactFooter">
+      <div class="container">
+        <div class="row align-items-start justify-content-between py-4">
+          <div class="col-12 col-md-3 mb-4 mb-md-0 footer-logo-col">
+            <a class="navbar-brand mb-2" href="#homeSection"
+              >Code<span>Clip</span></a
+            >
+            <p class="footer-desc mb-0">
+              CodeClip is a open source project under GirlScript Summer of Code
+              (GSSoC) 2025 to open for contribution
+            </p>
+          </div>
+          <div class="col-12 col-md-6 mb-4 mb-md-0 footer-links-col">
+            <h5 class="footer-title">Important Links</h5>
+            <ul class="footer-links list-unstyled mb-0">
+              <li><a href="#homeSection">Home</a></li>
+              <li><a href="#challengeSection">Challenges</a></li>
+              <li><a href="#leaderboardSection">Leaderboard</a></li>
+              <li><a href="#aboutSection">About</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6 footer-contact-col-main">
+            <h5 class="footer-title">Contact Us</h5>
+            <div class="footer-contact-row d-flex justify-content-center">
+              <div
+                class="footer-contact-col d-flex flex-column align-items-center"
+              >
+                <a
+                  href="https://github.com/opensource-society/CodeClip"
+                  target="_blank"
+                  class="btn btn-primary mb-2 footer-contact-btn"
+                  style="max-width: 250px"
+                >
+                  <i class="fab fa-github me-2"></i> GitHub
+                </a>
+                <a
+                  href="https://github.com/opensource-society/CodeClip"
+                  target="_blank"
+                  class="btn btn-primary mb-2 footer-contact-btn"
+                  style="max-width: 250px"
+                >
+                  <i class="fab fa-discord me-2"></i> Discord
+                </a>
+              </div>
+              <div
+                class="footer-contact-col d-flex flex-column align-items-center"
+              >
+                <a
+                  href="https://github.com/opensource-society/CodeClip"
+                  target="_blank"
+                  class="btn btn-primary footer-contact-btn"
+                  style="max-width: 250px"
+                >
+                  <i class="fas fa-exclamation-circle me-2"></i> Open an Issue
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="vault-card-content">
-          <h3 class="vault-title">Your Challenge Vault</h3>
-          <p class="vault-desc">
-            Track, review, and revisit all your coding challenges in one secure place.
-          </p>
-          <!-- Vault CTA -->
-          <a href="/CodeClip/pages/vault.html" class="btn btn-primary vault-cta">Open Vault</a>
-        </div>
+        <hr />
+        <p class="footerNote text-center mb-0">
+          &copy; CodeClip | Open Source Project 2025
+        </p>
       </div>
-    </section>
+    </footer>
+    <!-- ================================ Footer Section End Here ================================ -->
 
-  </main>
+    <!-- ================ Vendor JS ================  -->
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/owl.carousel.min.js"></script>
+    <script src="scripts/bootstrap.bundle.min.js"></script>
 
-  <!-- Footer -->
-  <footer class="footer" role="contentinfo">
-    <div class="container footer__content">
-      <section class="footer__section">
-        <h4>CodeClip</h4>
-        <p>Master coding challenges in your browser</p>
-      </section>
-
-      <section class="footer__section">
-        <h4>Quick Links</h4>
-        <ul>
-          <!-- Footer Quick Links -->
-          <li><a href="/CodeClip/index.html" data-route="/">Home</a></li>
-          <li><a href="/CodeClip/pages/challenges.html" data-route="/challenges">Challenges</a></li>
-          <li><a href="/CodeClip/pages/editor.html" data-route="/editor">Editor</a></li>
-        </ul>
-      </section>
-
-      <section class="footer__section">
-        <h4>Community</h4>
-        <ul>
-          <li>
-            <a href="https://github.com/opensource-society/CodeClip" target="_blank" rel="noopener noreferrer">GitHub</a>
-          </li>
-          <li><a href="#" aria-label="Discord link">Discord</a></li>
-          <li><a href="#" aria-label="Twitter link">Twitter</a></li>
-        </ul>
-      </section>
-    </div>
-
-    <div class="footer__bottom">
-      <p>&copy; 2024 CodeClip. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- Typed.js and Mobile Navigation Toggle Script -->
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-  <script>
-    // Initialize Typed.js for typewriter effect
-    var typed = new Typed('#element', {
-      strings: ['Code', 'Challenge', 'Conquer'],
-      typeSpeed: 50,
-      loop: true,
-    });
-
-    // Mobile navigation toggle
-    const navToggle = document.getElementById('navToggle');
-    const navMenu = document.getElementById('navMenu');
-
-    navToggle.addEventListener('click', () => {
-      const isOpen = navToggle.getAttribute('aria-expanded') === 'true';
-      navToggle.setAttribute('aria-expanded', !isOpen);
-      navMenu.classList.toggle('open', !isOpen);
-    });
-  </script>
-</body>
+    <!-- ================ Custom JS ================  -->
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
