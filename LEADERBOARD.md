@@ -6,6 +6,7 @@ This leaderboard tracks contributors who have completed issues labeled as `level
 
 | Username | Level 1 | Level 2 | Level 3 | PRs Merged |
 |----------|---------|---------|---------|-------------|
+
 | [@Suhani1234-5](https://github.com/Suhani1234-5) | 0 | 1 | 1 | 5 |
 | [@cosmicTitiksha](https://github.com/cosmicTitiksha) | 1 | 1 | 0 | 4 |
 | [@Shalini22-ui](https://github.com/Shalini22-ui) | 0 | 1 | 0 | 4 |
@@ -38,6 +39,7 @@ This leaderboard tracks contributors who have completed issues labeled as `level
 | [@Oviya-Babu](https://github.com/Oviya-Babu) | 0 | 1 | 0 | 0 |
 | [@faisal07777](https://github.com/faisal07777) | 1 | 0 | 0 | 0 |
 | [@AmritRaj29](https://github.com/AmritRaj29) | 1 | 0 | 0 | 0 |
+
 
 ---
 
