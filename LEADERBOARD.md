@@ -26,6 +26,7 @@ This leaderboard tracks contributors who have completed issues labeled as `level
 | [@VidhanThakur09](https://github.com/VidhanThakur09) | 0 | 1 | 0 | 1 |
 | [@Ishika-codeit](https://github.com/Ishika-codeit) | 2 | 0 | 0 | 0 |
 | [@jdhruv555](https://github.com/jdhruv555) | 1 | 0 | 0 | 1 |
+| [@MohdAnas007](https://github.com/MohdAnas007) | 1 | 0 | 0 | 0 |
 | [@Samiksha-bajoria](https://github.com/Samiksha-bajoria) | 1 | 0 | 0 | 0 |
 | [@shreyas1103](https://github.com/shreyas1103) | 1 | 0 | 0 | 0 |
 | [@snehhhcodes](https://github.com/snehhhcodes) | 1 | 0 | 0 | 0 |
