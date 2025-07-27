@@ -116,3 +116,5 @@ codeclip/
 CodeClip is released under the **MIT License** – free for personal & commercial use with attribution.
 
 ### ⭐ Give the repo a star and join us in building the most accessible coding-challenge vault on the web!
+
+Contribution by Pushpendra Kumar Shah under Girls' Summer of Code 2025.
