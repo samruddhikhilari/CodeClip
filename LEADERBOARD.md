@@ -12,8 +12,6 @@ This leaderboard tracks contributors who have completed issues labeled as `level
 | [@Ishuuu1213](https://github.com/Ishuuu1213) | 1 | 1 | 0 | 2 |
 | [@Sanskriti10247](https://github.com/Sanskriti10247) | 1 | 1 | 0 | 1 |
 | [@Theuniii](https://github.com/Theuniii) | 0 | 1 | 0 | 2 |
-| [@faisal07777](https://github.com/faisal07777) | 2 | 1 | 0 | 0 |
-| [@AmritRaj29](https://github.com/AmritRaj29) | 2 | 1 | 0 | 0 |
 | [@Iqra-hussain235](https://github.com/Iqra-hussain235) | 1 | 0 | 0 | 1 |
 | [@snehaaadn](https://github.com/snehaaadn) | 1 | 0 | 0 | 1 |
 | [@Shrutik-0101](https://github.com/Shrutik-0101) | 0 | 1 | 0 | 1 |
@@ -36,6 +34,8 @@ This leaderboard tracks contributors who have completed issues labeled as `level
 | [@Sravanthi359](https://github.com/Sravanthi359) | 0 | 1 | 0 | 0 |
 | [@TechMe103](https://github.com/TechMe103) | 0 | 1 | 0 | 0 |
 | [@Oviya-Babu](https://github.com/Oviya-Babu) | 0 | 1 | 0 | 0 |
+| [@faisal07777](https://github.com/faisal07777) | 1 | 0 | 0 | 0 |
+| [@AmritRaj29](https://github.com/AmritRaj29) | 1 | 0 | 0 | 0 |
 
 ---
 
