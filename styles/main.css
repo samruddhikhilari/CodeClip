@@ -34,10 +34,30 @@ html {
     color: #1e2c44;
 }
 
+/* added gap in nav links */
+.navbar-nav {
+    display: flex; 
+    gap: 1rem;
+}
+/* added shadow box and hover effact in nav-links */
 .nav-item a {
-    color: #1e2c44;
-    font-size: 20px;
-
+    color: #1e2c44; 
+    /* adding box hover effact */
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0.75rem 0.75rem;  
+    border-radius: 12px;  
+    box-shadow: 0 4px 10px rgba(40, 167, 69, 0.25);
+    transition: all 0.3s ease-in-out;
+} 
+.nav-item a:hover{
+    background: linear-gradient(90deg , #1e2c44 40%, #2563eb 100%);
+    border-color: #2563eb;
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(33 , 136 , 56 , 0.4);
+    color: white;
+    font-size: 1.1rem;
 }
 
 /* ================== Navbar Styles End Here ================== */
