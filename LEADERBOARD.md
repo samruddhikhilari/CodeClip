@@ -38,6 +38,7 @@ This leaderboard tracks contributors who have completed issues labeled as `level
 | [@shreyas1103](https://github.com/shreyas1103) | 1 | 0 | 0 | 0 |
 | [@snehhhcodes](https://github.com/snehhhcodes) | 1 | 0 | 0 | 0 |
 | [@unnati-joshi](https://github.com/unnati-joshi) | 1 | 0 | 0 | 0 |
+| [@Prakashray-dev](https://github.com/Prakashray-dev) | 0 | 0 | 1 | 0 |
 | [@yashp386](https://github.com/yashp386) | 1 | 0 | 0 | 0 |
 | [@Mastercoder0406](https://github.com/Mastercoder0406) | 0 | 1 | 0 | 0 |
 | [@Sravanthi359](https://github.com/Sravanthi359) | 0 | 1 | 0 | 0 |
