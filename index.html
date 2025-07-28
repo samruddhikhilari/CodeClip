@@ -69,25 +69,25 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+              <li class="nav-item ">
                 <a
-                  class="nav-link active"
+                  class="active"
                   aria-current="page"
                   href="#top"
                   >Home</a
                 >
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="../CodeClip/pages/challenges.html">Challenges</a>
+                <a href="../CodeClip/pages/challenges.html">Challenges</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#leaderboardSection">Leaderboard</a>
+                <a href="#leaderboardSection">Leaderboard</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#aboutSection">About</a>
+                <a href="#aboutSection">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contactFooter">Contact</a>
+                <a  href="#contactFooter">Contact</a>
               </li>
             </ul>
           </div>
@@ -286,6 +286,30 @@
               </div>
             </div>
           </div>
+          <!-- added card 6 -->
+          <!-- === Card 6 === -->
+           <div class="col-12 col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="card-TopContainer">
+                  <h5 class="card-Header">JavaScript Mini Projects</h5>
+                  <p class="card-Level medium-Col">Easy</p>
+                </div>
+
+                <p class="card-Participate">
+                  <i class="fa-solid fa-people-group"></i> 300 coders joined
+                </p>
+                <p class="card-Text">
+                  Created an interactive form/input area,Applied CSS styles for visual consistency .Added features like auto-focus, clear input after add, and animation.
+                </p>
+
+                <div class="card-CTAButton">
+                  <!-- === Create webpages of open source challenge and add link here === -->
+                  <a href="#" class="card-Btn">Join Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -474,66 +498,77 @@
     </section>
 
     <!-- ================================ Footer Section Start Here ================================ -->
-<footer id="contactFooter">
-  <div class="container">
-    <div class="row align-items-start justify-content-between py-4">
-      <div class="col-12 col-md-3 mb-4 mb-md-0 footer-logo-col">
-        <a class="navbar-brand mb-2" href="#homeSection">Code<span>Clip</span></a>
-        <p class="footer-desc mb-0">
-          CodeClip is an open-source project under GirlScript Summer of Code (GSSoC) 2025 open for contribution.
-        </p>
-      </div>
-
-      <div class="col-12 col-md-3 mb-4 mb-md-0 footer-links-col">
-        <h5 class="footer-title">Important Links</h5>
-        <ul class="footer-links list-unstyled mb-0">
-          <li><a href="#homeSection">Home</a></li>
-          <li><a href="#challengeSection">Challenges</a></li>
-          <li><a href="#leaderboardSection">Leaderboard</a></li>
-          <li><a href="#aboutSection">About</a></li>
-        </ul>
-      </div>
-
-      <div class="col-12 col-md-6 footer-contact-col-main">
-        <h5 class="footer-title">Contact Us</h5>
-        <div class="footer-contact-row row">
-          <div class="col-12 col-sm-6 d-flex flex-column align-items-center mb-3">
-            <a
-              href="https://github.com/opensource-society/CodeClip"
-              target="_blank"
-              class="btn btn-primary mb-2 footer-contact-btn"
-              style="max-width: 250px"
-            >
-              <i class="fab fa-github me-2"></i> GitHub
-            </a>
-            <a
-              href="https://discord.gg/Nf2yBMHx"
-              target="_blank"
-              class="btn btn-primary mb-2 footer-contact-btn"
-              style="max-width: 250px"
-            >
-              <i class="fab fa-discord me-2"></i> Discord
-            </a>
+    <footer id="contactFooter">
+      <div class="container">
+        <div class="row align-items-start justify-content-between py-4">
+          <div class="col-12 col-md-3 mb-4 mb-md-0 footer-logo-col">
+            <a class="navbar-brand mb-2" href="#homeSection"
+              >Code<span>Clip</span></a
+            > 
+            <p class="footer-desc mb-0">
+              CodeClip is a open source project under GirlScript Summer of Code
+              (GSSoC) 2025 to open for contribution
+            </p> 
           </div>
-          <div class="col-12 col-sm-6 d-flex flex-column align-items-center">
-            <a
-              href="https://github.com/opensource-society/CodeClip/issues"
-              target="_blank"
-              class="btn btn-primary mb-2 footer-contact-btn"
-              style="max-width: 250px"
-            >
-              <i class="fas fa-exclamation-circle me-2"></i> Open an Issue
-            </a>
-            <a
-              href="mailto:contact@codeclip.org"
-              class="btn btn-primary footer-contact-btn"
-              style="max-width: 250px"
-            >
-              <i class="fas fa-envelope me-2"></i> Email Us
-            </a>
+          <div class="col-12 col-md-6 mb-4 mb-md-0 footer-links-col">
+            <h5 class="footer-title">Important Links</h5>
+            <ul class="footer-links list-unstyled mb-0">
+              <li><a href="#homeSection">Home</a></li>
+              <li><a href="#challengeSection">Challenges</a></li>
+              <li><a href="#leaderboardSection">Leaderboard</a></li>
+              <li><a href="#aboutSection">About</a></li>
+            </ul>
           </div>
-        </div>
-      </div>
+          <div class="col-12 col-md-6 footer-contact-col-main">
+            <h5 class="footer-title">Contact Us</h5>
+            <div class="footer-contact-row d-flex justify-content-center">
+              <div
+                class="footer-contact-col d-flex flex-column align-items-center"
+              >
+                <a
+                  href="https://github.com/opensource-society/CodeClip"
+                  target="_blank"
+                  class="btn btn-primary mb-2 footer-contact-btn"
+                  style="max-width: 250px"
+                >
+                  <i class="fab fa-github me-2"></i> GitHub
+                </a>
+                <a
+                  href="https://github.com/opensource-society/CodeClip"
+                  target="_blank"
+                  class="btn btn-primary mb-2 footer-contact-btn"
+                  style="max-width: 250px"
+                >
+                  <i class="fab fa-discord me-2"></i> Discord
+                </a>
+              </div>
+              <div
+                class="footer-contact-col d-flex flex-column align-items-center"
+              >
+              <!-- margin added -->
+                <a
+                  href="https://github.com/opensource-society/CodeClip"
+                  target="_blank"
+                  class="btn btn-primary mb-2 footer-contact-btn"
+                  style="max-width: 250px"
+                >
+                  <i class="fas fa-exclamation-circle me-2"></i> Open an Issue
+                </a>
+                <!-- Added linkdin social connection -->
+                <a
+                  href="https://www.linkedin.com/in/adityai0"
+                  target="_blank"
+                  class="btn btn-primary mb-2 footer-contact-btn"
+                  style="max-width: 250px"
+                >
+                  <i class="fab fa-linkedin-in me-2"></i> Linkdin
+                </a>
+                
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div> 
     </div>
     <hr />
     <p class="footerNote text-center mb-0">
