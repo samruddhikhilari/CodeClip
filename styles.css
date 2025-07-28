@@ -140,49 +140,6 @@ body {
   display: flex;
 }
 
-/*.nav__list {
-  display: flex;
-  gap: 2.5rem;
-  list-style: none;
-  transition: all 0.3s ease;
-}
-
-.nav__link {
-  text-decoration: none;
-  color: #1e293b;
-  font-size: 1.1rem;
-  font-weight: 500;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-.nav__link:hover,
-.nav__link:focus {
-  color: #2563eb;
-}
-
-.nav__link::after {
-  content: '';
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #2563eb;
-  transition: width 0.3s ease;
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-}
-
-.nav__link:hover::after,
-.nav__link:focus::after,
-.nav__link.active::after {
-  width: 100%;
-}
-
-.nav__link.active {
-  color: #2563eb;
-}*/
-
 .nav__list {
   display: flex;
   gap: 2.5rem;
