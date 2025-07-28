@@ -20,6 +20,7 @@ This leaderboard tracks contributors who have completed issues labeled as `level
 | [@Shivin1016](https://github.com/Shivin1016) | 1 | 0 | 0 | 1 |
 | [@chilaka-eswari](https://github.com/chilaka-eswari) | 1 | 0 | 0 | 1 |
 | [@snehaaadn](https://github.com/snehaaadn) | 1 | 0 | 0 | 1 |
+| [@Surabhi210](https://github.com/Surabhi210) | 1 | 0 | 0 | 1 |
 | [@Shrutik-0101](https://github.com/Shrutik-0101) | 0 | 1 | 0 | 1 |
 | [@Kalika-Jay](https://github.com/Kalika-Jay) | 1 | 0 | 0 | 1 |
 | [@Sanyam2511](https://github.com/Sanyam2511) | 1 | 0 | 0 | 1 |
