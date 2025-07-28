@@ -16,7 +16,9 @@ This leaderboard tracks contributors who have completed issues labeled as `level
 | [@ankita-mohantyy](https://github.com/ankita-mohantyy) | 1 | 0 | 0 | 1 |
 | [@Iqra-hussain235](https://github.com/Iqra-hussain235) | 1 | 0 | 0 | 1 |
 | [@Pushpendra1798](https://github.com/Pushpendra1798) | 1 | 0 | 0 | 1 |
+| [@Jyoti520](https://github.com/Jyoti520) | 1 | 0 | 0 | 1 |
 | [@Shivin1016](https://github.com/Shivin1016) | 1 | 0 | 0 | 1 |
+| [@chilaka-eswari](https://github.com/chilaka-eswari) | 1 | 0 | 0 | 1 |
 | [@snehaaadn](https://github.com/snehaaadn) | 1 | 0 | 0 | 1 |
 | [@Shrutik-0101](https://github.com/Shrutik-0101) | 0 | 1 | 0 | 1 |
 | [@Kalika-Jay](https://github.com/Kalika-Jay) | 1 | 0 | 0 | 1 |
