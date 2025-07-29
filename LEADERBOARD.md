@@ -8,9 +8,9 @@ This leaderboard tracks contributors who have completed issues labeled as `level
 |----------|---------|---------|---------|-------------|
 | [@Ishuuu1213](https://github.com/Ishuuu1213) | 3 | 1 | 0 | 5 |
 | [@Suhani1234-5](https://github.com/Suhani1234-5) | 0 | 1 | 1 | 5 |
+| [@DoyelMishra15](https://github.com/DoyelMishra15) | 3 | 0 | 0 | 3 |
 | [@cosmicTitiksha](https://github.com/cosmicTitiksha) | 1 | 1 | 0 | 4 |
 | [@Shalini22-ui](https://github.com/Shalini22-ui) | 0 | 1 | 0 | 4 |
-| [@DoyelMishra15](https://github.com/DoyelMishra15) | 2 | 0 | 0 | 2 |
 | [@Sanskriti10247](https://github.com/Sanskriti10247) | 1 | 1 | 0 | 1 |
 | [@Theuniii](https://github.com/Theuniii) | 0 | 1 | 0 | 2 |
 | [@ankita-mohantyy](https://github.com/ankita-mohantyy) | 1 | 0 | 0 | 1 |
